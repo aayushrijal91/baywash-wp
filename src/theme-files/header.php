@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the header
  * 
@@ -13,9 +14,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
 </head>
+
 <body <?php body_class(); ?>>
-    <div class="container">
-        <div class="testing">testing</div>
-    </div>
-</body>
-</html>
+    <header>
+        <div class="header-top-bar bg-gray">
+            <div class="container">
+                <div class="text-right text-primary fw-400 py-3">Contact us for a <span class="fw-800">free quote</span>, one of our friendly team members is ready to assist</div>
+            </div>
+        </div>
+    </header>

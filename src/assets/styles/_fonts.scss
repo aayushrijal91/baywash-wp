@@ -1,20 +1,7 @@
 /* Font sizes */
-.h1-xxl {
-    font-size: 5rem; // 80px
-    margin-bottom: 0;
-
-    @include media-breakpoint-down(md) {
-        font-size: 3rem;
-    }
-
-    @include media-breakpoint-down(sm) {
-        font-size: 2rem;
-    }
-}
-
 h1,
 .h1 {
-    font-size: 4.375rem; // 70px
+    font-size: 2.73375rem; // 43.74px
     margin-bottom: 0;
 
     @include media-breakpoint-down(md) {
@@ -28,7 +15,7 @@ h1,
 
 h2,
 .h2 {
-    font-size: 3.4375rem; // 55px
+    font-size: 2.3125rem; // 37px
     margin-bottom: 0;
 
     @include media-breakpoint-down(lg) {
@@ -42,7 +29,7 @@ h2,
 
 h3,
 .h3 {
-    font-size: 2.5rem; // 40px
+    font-size: 2.30125rem; // 36.82px
     margin-bottom: 0;
 
     @include media-breakpoint-down(md) {
@@ -56,7 +43,7 @@ h3,
 
 h4,
 .h4 {
-    font-size: 2rem; // 32px
+    font-size: 2.25rem; // 36px
     margin-bottom: 0;
 
     @include media-breakpoint-down(sm) {
@@ -66,7 +53,7 @@ h4,
 
 h5,
 .h5 {
-    font-size: 1.625rem; // 26px
+    font-size: 2.125rem; // 34px
     margin-bottom: 0;
 
     @include media-breakpoint-down(sm) {
@@ -76,7 +63,7 @@ h5,
 
 h6,
 .h6 {
-    font-size: 1.5625rem; // 25px
+    font-size: 2.1225rem; // 33.96px
     margin-bottom: 0;
 
     @include media-breakpoint-down(sm) {
@@ -86,7 +73,7 @@ h6,
 
 h7,
 .h7 {
-    font-size: 1.5rem; // 24px
+    font-size: 2rem; //32px
     margin-bottom: 0;
 
     @include media-breakpoint-down(sm) {
@@ -95,7 +82,7 @@ h7,
 }
 
 .h8 {
-    font-size: 1.4375rem; // 23px
+    font-size: 1.901875rem; // 30.43px
 
     @include media-breakpoint-down(sm) {
         font-size: 1rem;
@@ -103,7 +90,7 @@ h7,
 }
 
 .h9 {
-    font-size: 1.375rem; // 22px
+    font-size: 1.875rem; // 30px
 
     @include media-breakpoint-down(sm) {
         font-size: 1rem;
@@ -111,7 +98,7 @@ h7,
 }
 
 .h10 {
-    font-size: 1.25rem; // 20px
+    font-size: 1.8275rem; // 29.24px
 
     @include media-breakpoint-down(sm) {
         font-size: 1rem;
@@ -119,7 +106,7 @@ h7,
 }
 
 .h11 {
-    font-size: 1.125rem; // 18px
+    font-size: 1.75rem; // 28px
 
     @include media-breakpoint-down(sm) {
         font-size: 1rem;
@@ -127,11 +114,118 @@ h7,
 }
 
 .h12 {
-    font-size: 0.9375rem; // 15px
+    font-size: 1.53rem; // 24.48px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
 }
 
+.h13 {
+    font-size: 1.5rem; // 24px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+
+.h14 {
+    font-size: 1.46875rem; // 23.5px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+
+.h15 {
+    font-size: 1.341875rem; // 21.47px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+
+.h16 {
+    font-size: 1.3125rem; // 21px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+
+.h17 {
+    font-size: 1.2675rem; // 20.28px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+
+.h18 {
+    font-size: 1.25rem; // 20px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+
+.h19 {
+    font-size: 1.21875rem; // 19.5px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+
+.h20 {
+    font-size: 1.150625rem; // 18.41px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+
+.h21 {
+    font-size: 1.125rem; // 18px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+
+.h22 {
+    font-size: 1.006875rem; // 16.11px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+}
+
+.h23 {
+    font-size: 1rem; // 16px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 0.875rem;
+    }
+}
+
+.h24 {
+    font-size: 0.9375rem; // 15px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 0.875rem;
+    }
+}
+
+.h25 {
+    font-size: 0.875rem; // 14px
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 $font-gilroy: "Gilroy", sans-serif;
-$font-body: $font-gilroy;
+$font-lexend: "Lexend", sans-serif;
+$font-body: $font-lexend;
 
 $font-families: (
     "gilroy": "Gilroy",
