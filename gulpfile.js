@@ -1,4 +1,3 @@
-// Imports
 var path = require('path');
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
