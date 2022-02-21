@@ -71,30 +71,31 @@ section.about {
         }
     }
 
-    .section__1, .section__3{
+    .section__1,
+    .section__3 {
         .about-text {
             padding: 34px 0;
-    
+
             .about-hero-title {
                 color: $complete-black;
                 padding: 34.14px 0 46px 0;
                 font-weight: 600;
                 text-transform: capitalize;
                 font-size: 2.1225rem; // 33.96px
-    
+
                 @include media-breakpoint-down(sm) {
                     font-size: 1rem;
                 }
             }
-    
+
             .about-sm-description {
                 line-height: 2;
                 font-size: 1.25rem; // 20px
-    
+
                 @include media-breakpoint-down(sm) {
                     font-size: 1rem;
                 }
-    
+
                 p {
                     padding: 8px 0;
                 }
@@ -113,6 +114,12 @@ section.about {
 
     .section__3 {
         padding: 63px 0;
+    }
+
+    .section__4 {
+        .team {
+            background: rgba(243, 130, 33, 0.7);
+        }
     }
 }
 

@@ -84,6 +84,12 @@ $small_description_3 = get_field('small_description_3');
 			</div>
 		</div>
 	</div>
+
+	<div class="section__4" data-src="">
+		<div class="team">
+			<div class="container"></div>
+		</div>
+	</div>
 </section>
 
 <?php
