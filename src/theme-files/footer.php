@@ -88,7 +88,7 @@ $footer_logo = get_field('footer_logo', 'options');
 	</div>
 </footer>
 <a href="javascript:" id="return-to-top">
-	<img src="images/icons/arrow-up.webp">
+	<img src="<?= get_template_directory_uri() ?>/images/arrow-up.webp">
 </a>
 <?php wp_footer(); ?>
 </body>

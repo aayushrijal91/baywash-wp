@@ -8,8 +8,23 @@ jQuery(function ($) {
                     duration: 1500,
                 });
                 $(() => {
-
+                    $(window).scroll(function () {
+                        if ($(this).scrollTop() > 1000) {
+                            $('#return-to-top').fadeIn();
+                            $("#return-to-top").addClass('active');
+                        } else {
+                            $('#return-to-top').fadeOut();
+                            $("#return-to-top").removeClass('active');
+                        }
+                    });
+                    $('#return-to-top').click(function () {
+                        $('body,html').animate({
+                            scrollTop: 0
+                        }, 1000);
+                        return false;
+                    });
                 });
+
             }, // end misc
         }, // end ui
         //utils: {
@@ -20,18 +35,3 @@ jQuery(function ($) {
     //Engine.utils.sliders();
 });
 
-jQuery(window).scroll(function () {
-    if (jQuery(this).scrollTop() > 1000) {
-        jQuery('#back-top').fadeIn();
-        jQuery("#back-top").addClass('active');
-    } else {
-        jQuery('#back-top').fadeOut();
-        jQuery("#back-top").removeClass('active');
-    }
-});
-jQuery('#back-top').click(function () {
-    jQuery('body,html').animate({
-        scrollTop: 0
-    }, 1000);
-    return false;
-});
