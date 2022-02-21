@@ -38,10 +38,19 @@ $phone_number = get_field('phone_number', 'options');
                                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
+                                <a class="nav-link" href="#">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Areas We Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
                             </li>
                         </ul>
                         <a class="btn btn-secondary rounded-pill text-tertiary h21 fw-800 px-4 line-height-1 py-3" href="tel:<?= $phone_number ?>">
