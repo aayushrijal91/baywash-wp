@@ -61,3 +61,4 @@ $phone_number = get_field('phone_number', 'options');
             </div>
         </div>
     </header>
+    <?php get_template_part('parts/section', 'banner'); ?>

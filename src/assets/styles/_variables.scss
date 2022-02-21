@@ -7,6 +7,7 @@ $light: #888B97;
 $black: #222222;
 $light-black: #434343;
 $white: #ffffff;
+$transparent: rgba(0,0,0,0);
 
 $theme-colors: () !default;
 $theme-colors: map-merge(
@@ -16,6 +17,7 @@ $theme-colors: map-merge(
         "black": $black,
         "light-black": $light-black,
         "white": $white,
+        "transparent": $transparent,
     ),
     $theme-colors
 );

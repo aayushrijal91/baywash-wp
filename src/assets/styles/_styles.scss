@@ -25,6 +25,26 @@ header.header {
     }
 }
 
+section.banner {
+    .banner-inner{
+        padding: 100px 0 69px 0;
+
+        .title {
+            font-weight: 900;
+            border-bottom: 5px solid $primary;
+            padding-bottom: 25px;
+            color: $gray;
+            line-height: 1;
+
+            p .bordered-text {
+                color: $white !important;
+                text-shadow: -1.45px -1.45px 0 $gray, 1.45px -1.45px 0 $gray, -1.45px 1.45px 0 $gray, 1.45px 1.45px 0 $gray !important;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
 footer.footer {
     padding: 53px 0 34px 0;
 
