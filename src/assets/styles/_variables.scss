@@ -5,6 +5,7 @@ $dark: #393A41;
 $gray: #434343;
 $light: #888B97;
 $black: #222222;
+$complete-black: #000000;
 $light-black: #434343;
 $white: #ffffff;
 $transparent: rgba(0,0,0,0);
@@ -15,6 +16,7 @@ $theme-colors: map-merge(
         "tertiary": $tertiary,
         "gray": $gray,
         "black": $black,
+        "complete-black": $complete-black,
         "light-black": $light-black,
         "white": $white,
         "transparent": $transparent,

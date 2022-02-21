@@ -15,18 +15,16 @@ header.header {
                     font-size: 0.875rem;
                 }
             }
+        }
 
-            &.active {
-                .nav-link {
-                    font-weight: 900;
-                }
-            }
+        .current-menu-item .nav-link {
+            font-weight: 900 !important;
         }
     }
 }
 
 section.banner {
-    .banner-inner{
+    .banner-inner {
         padding: 100px 0 69px 0;
 
         .title {
@@ -38,8 +36,64 @@ section.banner {
 
             p .bordered-text {
                 color: $white !important;
-                text-shadow: -1.45px -1.45px 0 $gray, 1.45px -1.45px 0 $gray, -1.45px 1.45px 0 $gray, 1.45px 1.45px 0 $gray !important;
+                text-shadow: -1.45px -1.45px 0 $gray, 1.45px -1.45px 0 $gray, -1.45px 1.45px 0 $gray,
+                    1.45px 1.45px 0 $gray !important;
                 font-weight: 600;
+            }
+        }
+    }
+}
+
+.small-hero-title {
+    color: $primary;
+    font-weight: 500;
+    position: relative;
+    font-size: 1.006875rem; // 16.11px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 10px;
+        left: -3.5rem;
+        border-bottom: 1.15px solid $primary;
+        width: 38px;
+    }
+}
+section.about {
+    .hero-image-1 {
+        border-radius: 0px 0px 50px 0px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .about-text {
+        padding: 73px 0;
+
+        .about-hero-title {
+            color: $complete-black;
+            padding: 34.14px 0 46px 0;
+            font-weight: 600;
+            text-transform: capitalize;
+            font-size: 2.1225rem; // 33.96px
+
+            @include media-breakpoint-down(sm) {
+                font-size: 1rem;
+            }
+        }
+
+        .about-sm-description {
+            line-height: 2;
+            font-size: 1.25rem; // 20px
+
+            @include media-breakpoint-down(sm) {
+                font-size: 1rem;
+            }
+
+            p {
+                padding: 8px 0;
             }
         }
     }

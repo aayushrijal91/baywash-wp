@@ -32,8 +32,16 @@ $phone_number = get_field('phone_number', 'options');
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarText">
-                        <ul class="navbar-nav ml-auto">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <?php wp_nav_menu(array(
+                                    'menu' => 'Primary Menu',
+                                    'menu_class' => 'navbar-nav',
+                                    'item_class' => 'nav-item',
+                                    'link_class' => 'nav-link',
+                                    'container_class' => 'ml-auto mobile-menu',
+                                    'container_id' => '',
+                                )); ?>
+                        <!-- <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
                                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                             </li>
@@ -52,7 +60,7 @@ $phone_number = get_field('phone_number', 'options');
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contact Us</a>
                             </li>
-                        </ul>
+                        </ul> -->
                         <a class="btn btn-secondary rounded-pill text-tertiary h21 fw-800 px-4 line-height-1 py-3" href="tel:<?= $phone_number ?>">
                             <?= $phone_number ?>
                         </a>
