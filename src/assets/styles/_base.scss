@@ -1,6 +1,5 @@
-*, html {
-    padding: 0 !important;
-    margin: 0 !important;
+*,
+html {
     list-style: none;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -8,6 +7,8 @@
 }
 
 html {
+    padding: 0 !important;
+    margin: 0 !important;
     overflow-x: hidden;
 }
 
@@ -23,10 +24,7 @@ body {
 }
 
 p {
-    font-size: 1rem;
-    font-weight: normal;
-    margin-bottom: 1.15rem;
-    line-height: 1.75;
+    margin-bottom: 0;
 }
 
 img {

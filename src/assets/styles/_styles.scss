@@ -1,3 +1,35 @@
 @function imgUrl($file, $path: "background") {
     @return url("../images/" + $path + "/" + $file) no-repeat;
 }
+
+footer.footer {
+    padding: 83px 0 56px 0;
+
+    .footer-description {
+        opacity: 0.75;
+        font-weight: 300;
+        color: $white;
+        font-size: 0.875rem;
+        line-height: 1.71;
+        padding: 29px 0;
+    }
+
+    .social-media .social-icon {
+        padding: 0 12px;
+    }
+
+    .footer-bottom {
+        padding-top: 52px;
+
+        .copyright p {
+            color: $white;
+            font-size: 0.9375rem; // 15px
+            line-height: 2.53;
+
+            @include media-breakpoint-down(sm) {
+                line-height: 1;
+                font-size: 0.875rem;
+            }
+        }
+    }
+}
