@@ -34,7 +34,7 @@ section.banner {
             color: $gray;
             line-height: 1;
 
-            p .bordered-text {
+            span.bordered-text {
                 color: $white !important;
                 text-shadow: -1.45px -1.45px 0 $gray, 1.45px -1.45px 0 $gray, -1.45px 1.45px 0 $gray,
                     1.45px 1.45px 0 $gray !important;
@@ -63,6 +63,7 @@ section.banner {
         width: 38px;
     }
 }
+
 section.about {
     .section__1 {
         .hero-image-1 {
@@ -117,8 +118,96 @@ section.about {
     }
 
     .section__4 {
+        margin: 120px 0;
+
         .team {
             background: rgba(243, 130, 33, 0.7);
+            padding: 103px 0;
+
+            .team_memberDpWrapper {
+                border-radius: 23px;
+                overflow: hidden;
+                position: relative;
+                display: flex;
+                align-items: end;
+                justify-content: center;
+
+                img.team_memberDp {
+                    width: 100%;
+                }
+
+                .team_aboutTeamMemberWrapper {
+                    position: absolute;
+                    background: $white;
+                    border-radius: 21.61px;
+                    bottom: 43px;
+                    width: 85%;
+                    text-align: center;
+
+                    img.team_union {
+                        width: 91.71px !important;
+                        height: 91.71px !important;
+                        margin: -45.5px auto 0 auto;
+                    }
+
+                    .team_memberInfo {
+                        font-family: $font-gilroy;
+                        color: $black;
+                        font-weight: 400;
+                        padding: 0 37px 44px 37px;
+
+                        p.team_memberName {
+                            font-weight: 700;
+                            font-size: 1.341875rem; // 21.47px
+
+                            @include media-breakpoint-down(sm) {
+                                font-size: 1rem;
+                            }
+                        }
+
+                        p.team_memberDesignation {
+                            font-size: 14.32px;
+                            opacity: 0.8;
+                        }
+
+                        p.team_memberBio {
+                            padding-top: 31.33px;
+                        }
+                    }
+                }
+            }
+
+            .team_heading {
+                font-weight: 600;
+                color: $white;
+                line-height: 1.59;
+            }
+
+            .team_heading > span.bordered-text {
+                color: rgba(243, 130, 33, 0.8) !important;
+                text-shadow: -1.45px -1.45px 0 $white, 1.45px -1.45px 0 $white, -1.45px 1.45px 0 $white,
+                    1.45px 1.45px 0 $white !important;
+                font-weight: 600;
+            }
+
+            .team_horizontalDivider {
+                height: 5px;
+                width: 392px;
+                background: $black;
+                border-radius: 19.76px;
+                margin: 40px 0;
+            }
+
+            .team_description {
+                color: $white;
+                font-weight: 600;
+                line-height: 2;
+                padding-right: 64px;
+            }
+
+            .team_buttonWrapper {
+                padding-top: 24px;
+            }
         }
     }
 }

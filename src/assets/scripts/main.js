@@ -8,6 +8,8 @@ jQuery(function ($) {
                     duration: 1500,
                 });
                 $(() => {
+                    console.log($('.team_memberBio p').html());
+                    console.log('test');
                     $(window).scroll(function () {
                         if ($(this).scrollTop() > 1000) {
                             $('#return-to-top').fadeIn();

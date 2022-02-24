@@ -8,9 +8,9 @@ $banner_bg = $feat_image ? $feat_image : $default_background['url'];
 <section class="banner lazyload" data-src="<?= $banner_bg ?>">
     <div class="container">
         <div class="banner-inner d-flex align-items-center">
-            <div class="h1 title" data-aos="zoom-in">
+            <h1 class="h1 title" data-aos="zoom-in">
                 <?= $banner_title ?>
-            </div>
+            </h1>
         </div>
     </div>
 </section>

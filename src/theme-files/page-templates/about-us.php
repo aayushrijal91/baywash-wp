@@ -12,12 +12,19 @@ $small_description_1 = get_field('small_description_1');
 $hero_description_2 = get_field('hero_description_2');
 $call_us_text = get_field('call_us_text');
 $hero_image_2 = get_field('hero_image_2');
-$phone_icon = get_field('phone_icon');
 $phone_number = get_field('phone_number', 'option');
 $sm_hero_title_3 = get_field('small_hero_title_3');
 $hero_title_3 = get_field('hero_title_3');
 $hero_image_3 = get_field('hero_image_3');
 $small_description_3 = get_field('small_description_3');
+$background_4 = get_field('background_image');
+$team_hero_title_4 = get_field('team_title');
+$team_description_4 = get_field('team_description');
+$team_read_more_link = get_field('team_read_more_link');
+$team_memberDp = get_field('team_member_dp');
+$team_memberName = get_field('team_member_name');
+$team_memberDesignation = get_field('team_member_designation');
+$team_memberBio = get_field('team_member_bio');
 ?>
 
 <section class="about">
@@ -51,8 +58,8 @@ $small_description_3 = get_field('small_description_3');
 							<?= $hero_description_2 ?>
 						</div>
 						<div class="call-us-button pt-3">
-							<a href="<?= $phone_number ?>" class="btn btn-black rounded-pill text-white fw-600 h25 px-4 py-3 line-height-1">
-								<img src="<?= $phone_icon['url'] ?>" alt="<?= $phone_icon['alt'] ?>"> <?= $call_us_text ?>
+							<a href="tel:<?= $phone_number ?>" class="btn btn-black rounded-pill text-white fw-600 h25 px-4 py-3 line-height-1">
+							<img src="<?= get_template_directory_uri() ?>/images/phone_icon.webp"> <?= $call_us_text ?>
 							</a>
 						</div>
 					</div>
@@ -85,9 +92,39 @@ $small_description_3 = get_field('small_description_3');
 		</div>
 	</div>
 
-	<div class="section__4" data-src="">
+	<div class="section__4 lazyload" data-src="<?= $background_4['url'] ?>">
 		<div class="team">
-			<div class="container"></div>
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-5">
+						<div class="row no-gutters justify-content-center">
+							<div class="col-md-9 col-lg-10">
+								<div class="team_memberDpWrapper">
+									<img class="team_memberDp" src="<?= $team_memberDp['url'] ?>" alt="<?= $team_memberDp['alt'] ?>">
+									<div class="team_aboutTeamMemberWrapper">
+										<img class="team_union" src="<?= get_template_directory_uri() ?>/images/union.webp">
+										<div class="team_memberInfo">
+											<p class="team_memberName"><?= $team_memberName ?></p>
+											<p class="team_memberDesignation pt-2"><?= $team_memberDesignation ?></p>
+											<div class="team_memberBio h17"><?= $team_memberBio ?></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-7 px-5">
+						<div class="team_heading h2"><?= $team_hero_title_4 ?></div>
+						<div class="team_horizontalDivider"></div>
+						<div class="team_description h21">
+							<?= $team_description_4 ?>
+						</div>
+						<div class="team_buttonWrapper">
+							<a href="<?= $team_read_more_link['url'] ?>" class="btn text-white h21 fw-700 px-0">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
