@@ -212,6 +212,25 @@ section.about {
     }
 }
 
+section.services {
+    .services_listWrapper {
+        padding: 35px 0;
+        
+        .cover_image {
+            width: 100%;
+            border-radius: 25.29px;
+            overflow: hidden;
+        }
+
+        .services_listTitle {
+            font-size: 1.469rem; // 23.5px
+            color: $complete-black;
+            font-weight: 700;
+            padding-top: 25.29px;
+        }
+    }
+}
+
 footer.footer {
     padding: 53px 0 34px 0;
 

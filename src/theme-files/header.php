@@ -33,34 +33,14 @@ $phone_number = get_field('phone_number', 'options');
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <?php wp_nav_menu(array(
-                                    'menu' => 'Primary Menu',
-                                    'menu_class' => 'navbar-nav',
-                                    'item_class' => 'nav-item',
-                                    'link_class' => 'nav-link',
-                                    'container_class' => 'ml-auto mobile-menu',
-                                    'container_id' => '',
-                                )); ?>
-                        <!-- <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Gallery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Areas We Service</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact Us</a>
-                            </li>
-                        </ul> -->
+                        <?php wp_nav_menu(array(
+                            'menu' => 'Primary Menu',
+                            'menu_class' => 'navbar-nav',
+                            'item_class' => 'nav-item',
+                            'link_class' => 'nav-link',
+                            'container_class' => 'ml-auto mobile-menu',
+                            'container_id' => '',
+                        )); ?>
                         <a class="btn btn-secondary rounded-pill text-tertiary h21 fw-800 px-4 line-height-1 py-3" href="tel:<?= $phone_number ?>">
                             <?= $phone_number ?>
                         </a>
@@ -69,4 +49,4 @@ $phone_number = get_field('phone_number', 'options');
             </div>
         </div>
     </header>
-    <?php get_template_part('parts/section', 'banner'); ?>
+    

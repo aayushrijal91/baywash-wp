@@ -5,6 +5,8 @@
  *
  */
 get_header();
+get_template_part('parts/section', 'banner');
+
 $sm_hero_title_1 = get_field('small_hero_title_1');
 $hero_title_1 = get_field('hero_title_1');
 $hero_image_1 = get_field('hero_image_1');

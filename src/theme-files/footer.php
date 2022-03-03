@@ -30,30 +30,35 @@ $footer_logo = get_field('footer_logo', 'options');
 				<div class="row no-gutters justify-content-between">
 					<div class="col-6 col-lg-2 footer-sidebar-column">
 						<div class="footer-sidebar-title h21">Site</div>
-						<ul>
-							<li>Home</li>
-							<li>About Us</li>
-							<li>Areas</li>
-							<li>Gallery</li>
-						</ul>
+						<?php wp_nav_menu(array(
+							'menu' => 'Footer Menu',
+							// // 'menu_class' => 'navbar-nav',
+							// // 'item_class' => 'nav-item',
+							// // 'link_class' => 'nav-link',
+							// // 'container_class' => 'ml-auto mobile-menu',
+							// 'container_id' => '',
+						)); ?>
 					</div>
 					<div class="col-6 col-lg footer-sidebar-column">
 						<div class="footer-sidebar-title h21">Services</div>
-						<ul>
-							<li>NDIS Cleaning</li>
-							<li>Commercial &amp; Office</li>
-							<li>Government</li>
-							<li>Leisure &amp; Hospitality</li>
-						</ul>
-					</div>
-					<div class="col-6 col-lg-4 footer-sidebar-column">
-						<div class="footer-sidebar-title h21 invisible">a</div>
-						<ul>
-							<li>Transport</li>
-							<li>Manufacturing And Industrial</li>
-							<li>Areas</li>
-							<li>Event Cleaning</li>
-						</ul>
+						<div class="row no-gutters">
+							<div class="col-5">
+								<ul>
+									<li>NDIS Cleaning</li>
+									<li>Commercial &amp; Office</li>
+									<li>Government</li>
+									<li>Leisure &amp; Hospitality</li>
+								</ul>
+							</div>
+							<div class="col-6">
+								<ul>
+									<li>Transport</li>
+									<li>Manufacturing And Industrial</li>
+									<li>Areas</li>
+									<li>Event Cleaning</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 					<div class="col-6 col-lg-auto footer-sidebar-column">
 						<div class="footer-sidebar-title h21">Contact</div>
