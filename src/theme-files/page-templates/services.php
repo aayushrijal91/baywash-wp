@@ -10,6 +10,7 @@ get_template_part('parts/section', 'banner');
 
 <section class="services">
 	<div class="container">
+		<div class="services_heroText" data-aos="fade-right"><?= the_content(); ?></div>
 		<div class="row">
 			<?php
 			$args = array(
@@ -28,7 +29,7 @@ get_template_part('parts/section', 'banner');
 					$title = get_the_title();
 					$link = get_the_permalink();
 			?>
-					<div class="col-md-6 col-lg-3">
+					<div class="col-md-6 col-lg-3" data-aos="flip-up">
 						<div class="services_listWrapper">
 							<a href="<?= $link ?>">
 								<img src="<?= $featured_img_url ?>" class="cover_image">
