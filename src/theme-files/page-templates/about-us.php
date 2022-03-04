@@ -14,7 +14,6 @@ $small_description_1 = get_field('small_description_1');
 $hero_description_2 = get_field('hero_description_2');
 $call_us_text = get_field('call_us_text');
 $hero_image_2 = get_field('hero_image_2');
-$phone_number = get_field('phone_number', 'option');
 $sm_hero_title_3 = get_field('small_hero_title_3');
 $hero_title_3 = get_field('hero_title_3');
 $hero_image_3 = get_field('hero_image_3');
@@ -60,7 +59,7 @@ $team_memberBio = get_field('team_member_bio');
 							<?= $hero_description_2 ?>
 						</div>
 						<div class="call-us-button pt-3">
-							<a href="tel:<?= $phone_number ?>" class="btn btn-black rounded-pill text-white fw-600 h25 px-4 py-3 line-height-1">
+							<a href="tel:<?= get_field('phone_number', 'option') ?>" class="btn btn-black rounded-pill text-white fw-600 h25 px-4 py-3 line-height-1">
 							<img src="<?= get_template_directory_uri() ?>/images/phone_icon.webp"> <?= $call_us_text ?>
 							</a>
 						</div>

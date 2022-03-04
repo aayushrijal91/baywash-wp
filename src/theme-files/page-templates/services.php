@@ -11,10 +11,10 @@ get_template_part('parts/section', 'banner');
 <section class="services">
 	<div class="container">
 		<div class="services_heroText" data-aos="fade-right"><?= the_content(); ?></div>
-		<div class="row">
+		<div class="row service_listWrapper">
 			<?php
 			$args = array(
-				'posts_per_page' => 6,
+				'posts_per_page' => 50,
 				'post_type' => 'services',
 				'orderby' => 'menu_order',
 				'order' => 'ASC',
@@ -30,7 +30,7 @@ get_template_part('parts/section', 'banner');
 					$link = get_the_permalink();
 			?>
 					<div class="col-md-6 col-lg-3" data-aos="flip-up">
-						<div class="services_listWrapper">
+						<div class="services_listCard">
 							<a href="<?= $link ?>">
 								<img src="<?= $featured_img_url ?>" class="cover_image">
 								<div class="services_listTitle"><?= $title ?></div>

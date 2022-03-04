@@ -216,7 +216,7 @@ section.services {
     .services_heroText {
         text-align: center;
         font-weight: 600;
-        padding: 104px 0 59px;
+        padding-top: 104px;
 
         p {
             font-weight: 400;
@@ -229,20 +229,25 @@ section.services {
             }
         }
     }
-    .services_listWrapper {
-        padding: 35px 0;
 
-        .cover_image {
-            width: 100%;
-            border-radius: 25.29px;
-            overflow: hidden;
-        }
+    .service_listWrapper {
+        padding: 59px 0 65px 0;
 
-        .services_listTitle {
-            font-size: 1.469rem; // 23.5px
-            color: $complete-black;
-            font-weight: 700;
-            padding-top: 25.29px;
+        .services_listCard {
+            padding: 35px 0;
+    
+            .cover_image {
+                width: 100%;
+                border-radius: 25.29px;
+                overflow: hidden;
+            }
+    
+            .services_listTitle {
+                font-size: 1.469rem; // 23.5px
+                color: $complete-black;
+                font-weight: 700;
+                padding-top: 25.29px;
+            }
         }
     }
 }
@@ -303,6 +308,24 @@ section.services_inner {
                 line-height: 1.714;
                 padding: 8px 0;
             }
+        }
+    }
+}
+
+section.contact-us {
+    padding: 309px 0 0 0;
+    background: imgUrl('contact_usBg.webp');
+    background-size: contain;
+
+    .contact_form {
+        padding: 161px 0 0 0;
+    }
+    .contact_address {
+        background-color: $primary;
+        padding: 185px 87px 177.50px;
+
+        .admin_email {
+            padding-top: 122px;
         }
     }
 }
