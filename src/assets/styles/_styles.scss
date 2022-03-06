@@ -235,13 +235,13 @@ section.services {
 
         .services_listCard {
             padding: 35px 0;
-    
+
             .cover_image {
                 width: 100%;
                 border-radius: 25.29px;
                 overflow: hidden;
             }
-    
+
             .services_listTitle {
                 font-size: 1.469rem; // 23.5px
                 color: $complete-black;
@@ -313,16 +313,58 @@ section.services_inner {
 }
 
 section.contact-us {
-    padding: 309px 0 0 0;
-    background: imgUrl('contact_usBg.webp');
-    background-size: contain;
-
     .contact_form {
-        padding: 161px 0 0 0;
+        padding: 61px 0;
+        
+        label {
+            font-weight: 600;
+            font-size: 1.5rem; // 24px
+
+            @include media-breakpoint-down(sm) {
+                font-size: 1rem;
+            }
+        }
+
+        .sub_label {
+            font-weight: 500;
+            font-size: 1.125rem; // 18px
+            color: $light;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 1rem;
+            }
+        }
+
+        input,
+        textarea {
+            border: 0;
+            border-bottom: 1.2px solid #eeeeee;
+        }
+
+        input[type="submit"] {
+            border: 0;
+            background: $secondary;
+            color: #cb5e00;
+            font-weight: 700;
+            border-radius: 50px;
+            line-height: 1;
+            padding: 22px 78px;
+            font-size: 1.53rem; // 24.48px
+
+            @include media-breakpoint-down(sm) {
+                font-size: 1rem;
+            }
+        }
+
+        textarea.form-control {
+            height: 5rem !important;
+        }
     }
+
     .contact_address {
         background-color: $primary;
-        padding: 185px 87px 177.50px;
+        padding: 185px 87px 177.5px;
+        margin-top: -6rem;
 
         .admin_email {
             padding-top: 122px;

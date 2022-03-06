@@ -9,11 +9,12 @@ get_template_part('parts/section', 'banner');
 ?>
 
 <section class="contact-us">
+	<img class="w-100" src="<?= get_template_directory_uri() ?>/images/contact_usBg.webp" alt="">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-lg">
 				<div class="contact_form">
-
+					<?= do_shortcode('[contact-form-7 id="250" title="Contact Us"]') ?>
 				</div>
 			</div>
 			<div class="col-12 col-lg-auto">
