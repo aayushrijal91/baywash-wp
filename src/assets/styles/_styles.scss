@@ -373,7 +373,9 @@ section.contact-us {
 }
 
 section.testimonials {
-    .testimonial_slider{
+    padding: 70px 0;
+
+    .testimonial_slider {
         margin: 71px 0;
 
         .slick-slide {
@@ -384,7 +386,7 @@ section.testimonials {
             img {
                 width: 100%;
             }
-    
+
             .testimonial_textWrapper {
                 margin: -8rem 64px 0 64px;
                 background: $white;
@@ -392,11 +394,11 @@ section.testimonials {
                 border-radius: 16px;
                 position: relative;
                 padding: 32px;
-    
+
                 .testimonial_textHeading {
                     padding-bottom: 16px;
                 }
-    
+
                 .testimonial_textContent {
                     p {
                         padding: 6px 0;
@@ -438,6 +440,49 @@ section.testimonials {
             li.slick-active button {
                 background-color: $primary;
             }
+        }
+    }
+}
+
+section.gallery {
+    padding: 101px 0 89px 0;
+
+    .grid-wrapper > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .overlay {
+            position:absolute;
+            background: linear-gradient(0deg, #3D3D3D -0.97%, rgba(255, 255, 255, 0) 101.19%);
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 16px;
+        }
+    }
+    
+    .grid-wrapper > div > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 16px;
+        filter: drop-shadow(0px 9.23079px 23.077px rgba(0, 0, 0, 0.25));
+    }
+
+    .grid-wrapper {
+        display: grid;
+        grid-gap: 45px;
+        grid-template-columns: repeat(auto-fit, minmax(353.09px, 1fr));
+        grid-auto-rows: 381.6px;
+        grid-auto-flow: dense;
+
+        .wide {
+            grid-column: span 2;
         }
     }
 }
