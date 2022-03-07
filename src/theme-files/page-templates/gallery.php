@@ -16,7 +16,7 @@ get_template_part('parts/section', 'banner');
 					$image = get_sub_field('image');
 					$wide = get_sub_field('wide');
 				?>
-					<div class="<?= $wide ? "wide" : '' ?>">
+					<div class="<?= $wide ? "wide" : '' ?>" data-aos="flip-up">
 						<img src="<?= $image['url'] ?>" alt="<?= $image['alt'] ?>">
 						<div class="overlay"></div>
 					</div>

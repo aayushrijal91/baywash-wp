@@ -13,12 +13,12 @@ get_template_part('parts/section', 'banner');
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-lg">
-				<div class="contact_form">
+				<div class="contact_form" data-aos="fade-right">
 					<?= do_shortcode('[contact-form-7 id="250" title="Contact Us"]') ?>
 				</div>
 			</div>
 			<div class="col-12 col-lg-auto">
-				<div class="contact_address">
+				<div class="contact_address" data-aos="fade-left">
 					<div class="text-black fw-800 h10">Head Office</div>
 					<div class="text-white fw-400 h11 py-4">
 						<?= get_field('address','option') ?>

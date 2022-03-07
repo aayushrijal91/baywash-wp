@@ -15,7 +15,7 @@ jQuery(function ($) {
                         centerMode: true,
                         infiniteScroll: true,
                         centerPadding: "542px",
-                        // autoplay: true,
+                        autoplay: true,
                         dots: true,
                     });
 
