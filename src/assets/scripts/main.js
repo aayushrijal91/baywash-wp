@@ -8,8 +8,17 @@ jQuery(function ($) {
                     duration: 1500,
                 });
                 $(() => {
-                    console.log($('.team_memberBio p').html());
-                    console.log('test');
+                    $(".testimonial_slider").slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false,
+                        centerMode: true,
+                        infiniteScroll: true,
+                        centerPadding: "542px",
+                        // autoplay: true,
+                        dots: true,
+                    });
+
                     $(window).scroll(function () {
                         if ($(this).scrollTop() > 1000) {
                             $('#return-to-top').fadeIn();

@@ -315,7 +315,7 @@ section.services_inner {
 section.contact-us {
     .contact_form {
         padding: 61px 0;
-        
+
         label {
             font-weight: 600;
             font-size: 1.5rem; // 24px
@@ -368,6 +368,76 @@ section.contact-us {
 
         .admin_email {
             padding-top: 122px;
+        }
+    }
+}
+
+section.testimonials {
+    .testimonial_slider{
+        margin: 71px 0;
+
+        .slick-slide {
+            margin: 0 28px;
+        }
+
+        .testimonial_cardWrapper {
+            img {
+                width: 100%;
+            }
+    
+            .testimonial_textWrapper {
+                margin: -8rem 64px 0 64px;
+                background: $white;
+                box-shadow: 0px 9px 32px rgba(89, 92, 219, 0.05);
+                border-radius: 16px;
+                position: relative;
+                padding: 32px;
+    
+                .testimonial_textHeading {
+                    padding-bottom: 16px;
+                }
+    
+                .testimonial_textContent {
+                    p {
+                        padding: 6px 0;
+                        line-height: 1.71;
+                    }
+                }
+            }
+        }
+
+        .slick-dots {
+            display: flex !important;
+            bottom: -32px;
+            justify-content: center;
+            list-style-type: none;
+            padding-top: 12px;
+
+            li {
+                margin: 0 0.785rem;
+                width: 12.57px;
+                height: 12.57px;
+
+                button:before {
+                    width: 12.57px;
+                    height: 12.57px;
+                }
+            }
+
+            button {
+                display: block;
+                width: 12.57px;
+                height: 12.57px;
+                padding: 0;
+                border: none;
+                background-color: $light-grey;
+                text-indent: -9999px;
+                border-radius: 50%;
+            }
+
+            li.slick-active button {
+                background-color: $primary;
+            }
         }
     }
 }

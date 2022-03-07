@@ -37,5 +37,6 @@ get_template_part('parts/section', 'banner');
 </section>
 
 <?php
+	get_template_part('parts/section', 'testimonials');
 	get_footer();
 ?>
