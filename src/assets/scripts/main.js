@@ -18,6 +18,15 @@ jQuery(function ($) {
                         autoplay: true,
                         dots: true,
                     });
+                    
+                    $(".serviceList_slider").slick({
+                        slidesToShow: 5,
+                        slidesToScroll: 1,
+                        prevArrow: $('#serviceList_arrowLeft'),
+                        nextArrow: $('#serviceList_arrowRight'),
+                        infiniteScroll: true,
+                        autoplay: true,
+                    });
 
                     $(window).scroll(function () {
                         if ($(this).scrollTop() > 1000) {

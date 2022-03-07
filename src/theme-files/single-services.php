@@ -71,5 +71,6 @@ $small_description_1 = get_field('small_description_1');
 </section>
 
 <?php
+get_template_part('parts/section','serviceList');
 get_footer();
 ?>
