@@ -518,7 +518,7 @@ section.areas {
             font-size: 2.25rem;
             font-weight: 500;
 
-            @media screen and (max-width: 576px) {
+            @include media-breakpoint-down(sm) {
                 font-size: 2rem;
                 font-weight: 700;
             }
@@ -757,6 +757,14 @@ section.areas {
     div.areas_droplist.open > div.list {
         display: block;
         z-index: 99;
+    }
+}
+
+section.map {
+    iframe {
+        height: 700px;
+        width: 100%;
+        margin-bottom: -4px;
     }
 }
 

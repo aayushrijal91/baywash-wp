@@ -7,6 +7,7 @@ jQuery(function ($) {
                 AOS.init({
                     duration: 1500,
                 });
+                AOS.refresh();
                 $(() => {
                     $(".testimonial_slider").slick({
                         slidesToShow: 1,
@@ -38,43 +39,45 @@ jQuery(function ($) {
                         }
                     });
 
-                    $('#return-to-top').click(function () {
+                    $('#return-to-top').on('click', function () {
                         $('body,html').animate({
                             scrollTop: 0
                         }, 1000);
                         return false;
                     });
 
-                    $(".areas_loadMoreBtn").click(function () {
+                    if ($(".arealist:visible").length)
+                            $(".noresult").hide();
+                        else
+                            $(".noresult").show();
+                            
+                    $(".areas_loadMoreBtn").on('click', function () {
                         $(".arealist").show();
                         $(".areas_loadMoreWrap").remove();
-                        AOS.refresh();
-
                     });
-                    $(".areas_alphabet").click(function () {
+
+                    $(".areas_alphabet").on('click', function () {
                         $(this).siblings().removeClass("active");
                         $(this).addClass("active");
                         $(".all-list").hide();
                         $(".arealist").show();
-                        var chr = $(this).text();
+                        let chr = $(this).text();
                         $(".arealist").hide();
                         $(".char" + chr).show();
-                        AOS.refresh();
                         $(".areas_loadMoreWrap").remove();
+
                         if ($(".arealist:visible").length)
                             $(".noresult").hide();
                         else
                             $(".noresult").show();
                     });
-                    $(".areas_allSearch").click(function () {
+                    $(".areas_allSearch").on('click', function () {
                         $(this).siblings().removeClass("active");
                         $(this).addClass("active");
                         $(".all-list").show();
                         $(".arealist").show();
-                        AOS.refresh();
                         $(".noresult").hide();
                     });
-                    AOS.refresh();
 
 
                     $('.arealist ul').each(function () {

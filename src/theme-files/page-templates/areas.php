@@ -7,22 +7,22 @@
 get_header();
 get_template_part('parts/section', 'banner');
 $args = array(
-    'post_type'      => 'page',
-    'posts_per_page' => -1,
-    'order'          => 'ASC',
-    'orderby'        => 'publish_date',
-    'meta_query' => array(
-        array(
-            'key' => '_wp_page_template',
-            'value' => 'page-templates/suburb.php'
-        )
-    )
+	'post_type'      => 'page',
+	'posts_per_page' => -1,
+	'order'          => 'ASC',
+	'orderby'        => 'publish_date',
+	'meta_query' => array(
+		array(
+			'key' => '_wp_page_template',
+			'value' => 'page-templates/suburb.php'
+		)
+	)
 );
 $the_query = new WP_Query($args);
 ?>
 
 <section class="areas">
-	<section class="areatop bg-light-grey">
+	<section class="areatop bg-areas-light">
 		<div class="container">
 			<?php  // The Loop
 			if ($the_query->have_posts()) {
@@ -36,9 +36,9 @@ $the_query = new WP_Query($args);
 						Can’t find your area below? <a href="tel:000">Give us a Call</a> or <a href="/contact-us/">Enquire Now</a>
 					</div>
 				</div>
-	
+
 				<div class="areas_droplist d-block d-md-none" data-aos="fade-up">
-					<div class="caption">Allsss</div>
+					<div class="caption">All</div>
 					<div class="list">
 						<?php foreach (range('A', 'Z') as $char) {
 						?>
@@ -46,7 +46,7 @@ $the_query = new WP_Query($args);
 						<?php } ?>
 					</div>
 				</div>
-	
+
 				<div class="alphbetwrap d-none d-md-block" data-aos="fade-up">
 					<div class="areas_allSearch active">ALL</div>
 					<?php foreach (range('A', 'Z') as $char) {
@@ -62,9 +62,7 @@ $the_query = new WP_Query($args);
 					} ?>
 				</div>
 			<?php } ?>
-	
 		</div>
-	
 	</section>
 	<section class="areawrap section-space" data-aos="fade-up">
 		<div class="container">
@@ -93,9 +91,13 @@ $the_query = new WP_Query($args);
 				<div class="areas_loadMoreWrap "><a href="javascript:void(0)" class="areas_loadMoreBtn">Load More</a></div>
 			<?php }
 			wp_reset_postdata(); ?>
-	
+
 		</div>
 	</section>
+</section>
+
+<section class="map">
+	<iframe style="border: 0;" src="<?= get_field('map') ?>" allowfullscreen="allowfullscreen"></iframe>
 </section>
 
 <?php
