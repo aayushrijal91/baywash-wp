@@ -9,7 +9,7 @@
                             For All Of Our Clients.
                         </h1>
 
-                        <div class="horizontal-divider"></div>
+                        <div class="horizontal-divider" data-aos="fade-right"></div>
                         <div class="fw-600 h21">We provide a fully managed service to include fully trained cleaning operatives.</div>
                         <div class="h15 font-poppins text-light">We Work with a Range of Clients:</div>
                         <div class="row no-gutters align-items-center pb-4 pb-md-0">

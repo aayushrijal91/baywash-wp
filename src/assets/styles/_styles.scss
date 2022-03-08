@@ -75,13 +75,21 @@ section.homepageBanner {
         background: imgUrl("homepage_banner.webp") right top, linear-gradient(#f7f7f7 70%, $white 0%);
         background-size: 60%;
     }
-    
+
     span.bordered-text {
         color: $white !important;
         text-shadow: -1.45px -1.45px 0 $gray, 1.45px -1.45px 0 $gray, -1.45px 1.45px 0 $gray, 1.45px 1.45px 0 $gray !important;
         font-weight: 600;
     }
 
+    .horizontal-divider {
+        background: $primary;
+        background: #f38221;
+        border-radius: 19.7619px;
+        height: 5.27px;
+        max-width: 339px;
+        margin: 40px 0;
+    }
 
     .mobile-cta {
         background: imgUrl("banner-mobile.png");
