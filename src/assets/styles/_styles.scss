@@ -64,6 +64,108 @@ section.banner {
     }
 }
 
+section.homepage {
+    .homepage_about {
+        background: linear-gradient($primary 0 85%, $white 85% 100%);
+        margin: 36px 0 51px 0;
+
+        .homepage_aboutText {
+            padding: 100px 0;
+
+            .homepage_smallHeroTitle {
+                color: $white;
+                font-weight: 500;
+                position: relative;
+                font-size: 1.006875rem; // 16.11px
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 1rem;
+                }
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    top: 10px;
+                    left: -3.5rem;
+                    border-bottom: 1.15px solid $white;
+                    width: 38px;
+                }
+            }
+
+            .homepage_aboutHeroTitle {
+                color: $complete-black;
+                padding: 33px 0 35px 0;
+                font-weight: 600;
+                text-transform: capitalize;
+                font-size: 2.3rem; // 36.82px
+                line-height: 1.42;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 1rem;
+                }
+            }
+
+            .homepage_aboutSmDescription {
+                line-height: 1.75;
+                font-size: 1.15rem; // 18.41px
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 1rem;
+                }
+
+                p {
+                    padding: 8px 0;
+                }
+            }
+        }
+
+        .homepage_aboutButtons {
+            a.btn {
+                min-height: 48px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+
+section.quoteForm {
+    .quoteForm_wrapper {
+        padding: 61px 0 73px 0;
+
+        .form-group {
+            margin-bottom: 1.1875rem;
+        }
+
+        label {
+            font-weight: 600;
+            font-size: 1.125rem; // 18px
+            color: $dark-grey;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 1rem;
+            }
+        }
+
+        input {
+            border: 1.5px solid $light-grey;
+            border-radius: 10px;
+        }
+        
+        input[type="submit"] {
+            margin-top: 1.75rem;
+            display: block;
+            width: 100%;
+            border-radius: 10px;
+            border: 0;
+            color: $white;
+            background: $primary;
+            line-height: 1;
+            padding: 26px 16px;
+        }
+    }
+}
+
 section.about {
     .section__1 {
         .hero-image-1 {
