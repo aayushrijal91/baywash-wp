@@ -65,10 +65,10 @@ section.banner {
 }
 
 section.homepageBanner {
-    background: $dark;
+    background: $light-grey;
 
     @include media-breakpoint-up(xxl) {
-        background: imgUrl("homepage_banner.webp") right top, linear-gradient(#f7f7f7 77%, $white 0%);
+        background: imgUrl("homepage_banner.webp") right top, linear-gradient(#f7f7f7 86%, $white 0%);
     }
 
     @include media-breakpoint-only(xl) {
@@ -76,19 +76,56 @@ section.homepageBanner {
         background-size: 60%;
     }
 
-    span.bordered-text {
-        color: $white !important;
-        text-shadow: -1.45px -1.45px 0 $gray, 1.45px -1.45px 0 $gray, -1.45px 1.45px 0 $gray, 1.45px 1.45px 0 $gray !important;
-        font-weight: 600;
+    .homepage_bannerContentLeft {
+        padding: 113px 0 215px 0;
+
+        span.bordered-text {
+            color: $white !important;
+            text-shadow: -1.45px -1.45px 0 $gray, 1.45px -1.45px 0 $gray, -1.45px 1.45px 0 $gray, 1.45px 1.45px 0 $gray !important;
+            font-weight: 600;
+        }
+
+        .horizontal-divider {
+            background: $primary;
+            background: #f38221;
+            border-radius: 19.7619px;
+            height: 5.27px;
+            margin: 40px 0;
+        }
+
+        .homepage_bannerClientSlider {
+            .slick-track {
+                display: flex;
+            }
+
+            .slick-slide {
+                height: inherit;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
     }
 
-    .horizontal-divider {
-        background: $primary;
-        background: #f38221;
-        border-radius: 19.7619px;
-        height: 5.27px;
-        max-width: 339px;
-        margin: 40px 0;
+    .homepage_bannerContentRight {
+        .banner_infoSlider {
+            padding: 53px 0;
+            
+            .slick-list {
+                padding: 0 10% 0 0;
+            }
+
+            .slick-slide {
+                margin-right: 20px;
+            }
+
+            .banner_infoContent {
+                background: $white;
+                box-shadow: 0px 14.4921px 63.2381px rgba(51, 51, 51, 0.06);
+                border-radius: 32px;
+                padding: 31.62px;
+            }
+        }
     }
 
     .mobile-cta {

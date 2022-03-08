@@ -29,6 +29,22 @@ jQuery(function ($) {
                         autoplay: true,
                     });
 
+                    $(".homepage_bannerClientSlider").slick({
+                        slidesToShow: 6,
+                        slidesToScroll: 1,
+                        infiniteScroll: true,
+                        arrows: false,
+                        autoplay: true,
+                    });
+
+                    $(".banner_infoSlider").slick({
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infiniteScroll: true,
+                        autoplay: true,
+                        arrows: false,
+                    });
+
                     $(window).scroll(function () {
                         if ($(this).scrollTop() > 1000) {
                             $('#return-to-top').fadeIn();
@@ -47,10 +63,10 @@ jQuery(function ($) {
                     });
 
                     if ($(".arealist:visible").length)
-                            $(".noresult").hide();
-                        else
-                            $(".noresult").show();
-                            
+                        $(".noresult").hide();
+                    else
+                        $(".noresult").show();
+
                     $(".areas_loadMoreBtn").on('click', function () {
                         $(".arealist").show();
                         $(".areas_loadMoreWrap").remove();
