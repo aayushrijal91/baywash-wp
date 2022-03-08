@@ -64,6 +64,37 @@ section.banner {
     }
 }
 
+section.homepageBanner {
+    background: $dark;
+
+    @include media-breakpoint-up(xxl) {
+        background: imgUrl("homepage_banner.webp") right top, linear-gradient(#f7f7f7 77%, $white 0%);
+    }
+
+    @include media-breakpoint-only(xl) {
+        background: imgUrl("homepage_banner.webp") right top, linear-gradient(#f7f7f7 70%, $white 0%);
+        background-size: 60%;
+    }
+    
+    span.bordered-text {
+        color: $white !important;
+        text-shadow: -1.45px -1.45px 0 $gray, 1.45px -1.45px 0 $gray, -1.45px 1.45px 0 $gray, 1.45px 1.45px 0 $gray !important;
+        font-weight: 600;
+    }
+
+
+    .mobile-cta {
+        background: imgUrl("banner-mobile.png");
+
+        .mobile-cta-card {
+            padding: 1rem;
+            background: #ffffff;
+            box-shadow: 0px 14.5087px 63.3108px rgba(51, 51, 51, 0.06);
+            border-radius: 42.2072px;
+        }
+    }
+}
+
 section.homepage {
     .homepage_about {
         background: linear-gradient($primary 0 85%, $white 85% 100%);
@@ -151,7 +182,7 @@ section.quoteForm {
             border: 1.5px solid $light-grey;
             border-radius: 10px;
         }
-        
+
         input[type="submit"] {
             margin-top: 1.75rem;
             display: block;

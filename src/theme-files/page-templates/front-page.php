@@ -5,6 +5,8 @@
  *
  */
 get_header();
+get_template_part('parts/section','homeBanner');
+
 $about_hero_image = get_field('about_hero_image');
 $about_subtitle = get_field('about_subtitle');
 $about_hero_title = get_field('about_hero_title');
