@@ -608,11 +608,19 @@ section.contact-us {
 
     .contact_address {
         background-color: $primary;
-        padding: 185px 87px 177.5px;
-        margin-top: -6rem;
+        padding: 48px 16px;
+
+        @include media-breakpoint-up(md) {
+            padding: 185px 87px 177.5px;
+            margin-top: -6rem;
+        }
 
         .admin_email {
-            padding-top: 122px;
+            padding-top: 48px;
+            
+            @include media-breakpoint-up(md) {
+                padding-top: 122px;
+            }
         }
     }
 }
@@ -706,7 +714,8 @@ section.gallery {
         padding: 101px 0 89px 0;
     }
 
-    .gallery_sliderContent, .grid-wrapper > div {
+    .gallery_sliderContent,
+    .grid-wrapper > div {
         display: flex;
         justify-content: center;
         align-items: center;
