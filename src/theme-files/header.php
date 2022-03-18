@@ -22,7 +22,7 @@ $phone_number = get_field('phone_number', 'options');
     <header class="header">
         <div class="header-top-bar bg-gray">
             <div class="container">
-                <div class="text-right text-primary fw-400 py-3"><?= get_field('hero_slogan', 'options') ?></div>
+                <div class="text-right text-primary fw-400 py-3 h23"><?= get_field('hero_slogan', 'options') ?></div>
             </div>
         </div>
         <div class="header-navigation-bar">

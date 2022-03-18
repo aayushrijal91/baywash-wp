@@ -36,7 +36,7 @@ $team_memberBio = get_field('team_member_bio');
 			</div>
 			<div class="col about-text" data-aos="fade-left">
 				<div class="row no-gutters justify-content-center">
-					<div class="col-11 col-xxl-10 pr-5">
+					<div class="col-11 col-xxl-10 pr-md-5">
 						<div class="small-hero-title">
 							<?= $sm_hero_title_1 ?>
 						</div>
@@ -77,7 +77,7 @@ $team_memberBio = get_field('team_member_bio');
 			</div>
 			<div class="col about-text" data-aos="fade-left">
 				<div class="row no-gutters justify-content-center">
-					<div class="col-11 col-xxl-10 pr-5">
+					<div class="col-11 col-xxl-10 pr-md-5">
 						<div class="small-hero-title">
 							<?= $sm_hero_title_3 ?>
 						</div>
@@ -114,8 +114,8 @@ $team_memberBio = get_field('team_member_bio');
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-7 px-5" data-aos="fade-left">
-						<div class="team_heading h2"><?= $team_hero_title_4 ?></div>
+					<div class="col-lg-7 px-3 px-md-5" data-aos="fade-left">
+						<div class="team_heading"><?= $team_hero_title_4 ?></div>
 						<div class="team_horizontalDivider"></div>
 						<div class="team_description h21">
 							<?= $team_description_4 ?>

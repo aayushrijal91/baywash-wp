@@ -27,6 +27,14 @@ jQuery(function ($) {
                         nextArrow: $('#serviceList_arrowRight'),
                         infiniteScroll: true,
                         autoplay: true,
+                        responsive: [
+                            {
+                                breakpoint: 540,
+                                settings: {
+                                    slidesToShow: 1,
+                                }
+                            }
+                        ]
                     });
 
                     $(".homepage_bannerClientSlider").slick({

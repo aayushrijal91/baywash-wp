@@ -20,12 +20,22 @@ header.header {
         .current-menu-item .nav-link {
             font-weight: 900 !important;
         }
+
+        @include media-breakpoint-down(sm) {
+            .navbar-brand img {
+                max-width: 70%;
+            }
+        }
     }
 }
 
 section.banner {
     .banner-inner {
-        padding: 100px 0 69px 0;
+        padding: 60px 0 80px;
+
+        @include media-breakpoint-up(md) {
+            padding: 100px 0 69px 0;
+        }
 
         .title {
             font-weight: 900;
@@ -51,7 +61,8 @@ section.banner {
     font-size: 1.006875rem; // 16.11px
 
     @include media-breakpoint-down(sm) {
-        font-size: 1rem;
+        font-size: 0.875rem;
+        margin-left: 3.5rem;
     }
 
     &::before {
@@ -61,6 +72,10 @@ section.banner {
         left: -3.5rem;
         border-bottom: 1.15px solid $primary;
         width: 38px;
+
+        @include media-breakpoint-down(sm) {
+            top: 7px;
+        }
     }
 }
 
@@ -110,7 +125,7 @@ section.homepageBanner {
     .homepage_bannerContentRight {
         .banner_infoSlider {
             padding: 53px 0;
-            
+
             .slick-list {
                 padding: 0 10% 0 0;
             }
@@ -263,7 +278,8 @@ section.about {
                 font-size: 2.1225rem; // 33.96px
 
                 @include media-breakpoint-down(sm) {
-                    font-size: 1rem;
+                    font-size: 1.3rem;
+                    padding: 24px 0;
                 }
             }
 
@@ -272,7 +288,7 @@ section.about {
                 font-size: 1.25rem; // 20px
 
                 @include media-breakpoint-down(sm) {
-                    font-size: 1rem;
+                    font-size: 0.875rem;
                 }
 
                 p {
@@ -283,7 +299,11 @@ section.about {
     }
 
     .section__2 {
-        padding: 67px 0;
+        padding: 24px 0;
+
+        @include media-breakpoint-up(md) {
+            padding: 67px 0;
+        }
 
         .hero-description-2 {
             font-weight: 600;
@@ -292,15 +312,25 @@ section.about {
     }
 
     .section__3 {
-        padding: 63px 0;
+        padding: 64px 0 0 0;
+
+        @include media-breakpoint-up(md) {
+            padding: 63px 0;
+        }
     }
 
     .section__4 {
-        margin-top: 120px;
+        @include media-breakpoint-up(md) {
+            margin-top: 120px;
+        }
 
         .team {
             background: rgba(243, 130, 33, 0.7);
-            padding: 103px 0;
+            padding: 48px 0;
+
+            @include media-breakpoint-up(md) {
+                padding: 103px 0;
+            }
 
             .team_memberDpWrapper {
                 border-radius: 23px;
@@ -332,7 +362,11 @@ section.about {
                         font-family: $font-gilroy;
                         color: $black;
                         font-weight: 400;
-                        padding: 0 37px 44px 37px;
+                        padding: 0 16px 37px;
+
+                        @include media-breakpoint-up(md) {
+                            padding: 0 37px 44px 37px;
+                        }
 
                         p.team_memberName {
                             font-weight: 700;
@@ -359,6 +393,17 @@ section.about {
                 font-weight: 600;
                 color: $white;
                 line-height: 1.59;
+                font-size: 2.3125rem; // 37px
+                margin-bottom: 0;
+
+                @include media-breakpoint-down(lg) {
+                    font-size: 3rem;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    padding-top: 24px;
+                    font-size: 1.3rem;
+                }
             }
 
             .team_heading > span.bordered-text {
@@ -378,9 +423,14 @@ section.about {
 
             .team_description {
                 color: $white;
-                font-weight: 600;
-                line-height: 2;
-                padding-right: 64px;
+                line-height: 1.7;
+                font-weight: 500;
+
+                @include media-breakpoint-up(md) {
+                    font-weight: 600;
+                    line-height: 2;
+                    padding-right: 64px;
+                }
             }
 
             .team_buttonWrapper {
@@ -666,14 +716,32 @@ section.gallery {
 }
 
 section.serviceList {
-    padding: 130px 0;
+    padding: 64px 0;
+
+    @include media-breakpoint-up(md) {
+        padding: 130px 0;
+    }
+
+    .serviceList_heroHeading {
+        font-size: 2rem; //32px
+        margin-bottom: 0;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 1.5rem;
+        }
+    }
 
     .serviceList_slider {
-        padding-top: 71px;
+        padding-top: 48px;
+
+        @include media-breakpoint-up(md){
+            padding-top: 71px;
+        }
 
         .slick-list {
             padding: 0 5% 0 0;
         }
+
         .slick-slide {
             padding: 0 23px 0 0;
         }

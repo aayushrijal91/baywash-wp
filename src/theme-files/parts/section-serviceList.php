@@ -1,11 +1,11 @@
 <section class="serviceList">
     <div class="container">
         <div class="row justify-content-between align-items-center">
-            <div class="col-auto">
+            <div class="col col-md-auto">
                 <div class="row justify-content-between">
                     <div class="col-auto">
                         <div class="small-hero-title">Variety Of Services Available</div>
-                        <div class="fw-700 h7 pt-3">Our Services</div>
+                        <div class="fw-700 pt-3 serviceList_heroHeading">Our Services</div>
                     </div>
                 </div>
             </div>
@@ -21,7 +21,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid px-0">
+    <div class="container-fluid pl-3 px-md-0">
         <div class="row justify-content-end">
             <div class="col-12 col-xl-11">
                 <div class="serviceList_slider">
