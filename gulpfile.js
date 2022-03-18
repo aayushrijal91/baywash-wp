@@ -44,8 +44,8 @@ var sources = {
     styles: `${src}assets/styles/**/*`,
     scripts: `${src}assets/scripts/**/*`,
     fonts: `${src}assets/fonts/**/*`,
-    data_files: `${src}data/**/*`,
-    fontawesome_fonts: 'node_modules/@fortawesome/fontawesome-free/webfonts/**/*',
+    // data_files: `${src}data/**/*`,
+    // fontawesome_fonts: 'node_modules/@fortawesome/fontawesome-free/webfonts/**/*',
     vendor_scripts: [].concat.apply([], [
         bootstrap_scripts,
         lazy_load_script,
@@ -59,8 +59,8 @@ var destinations = {
     styles: `${build}styles/`,
     scripts: `${build}scripts/`,
     fonts: `${build}fonts/`,
-    data_files: `${build}data/`,
-    fontawesome_fonts: `${build}/webfonts/`
+    // data_files: `${build}data/`
+    // fontawesome_fonts: `${build}/webfonts/`
 }
 
 /**
@@ -108,16 +108,16 @@ function fonts() {
 }
 
 // font awesome needs its web fonts in the root directory
-function fontawesome_fonts() {
-    return gulp.src(sources.fontawesome_fonts)
-        .pipe(gulp.dest(destinations.fontawesome_fonts))
-}
+// function fontawesome_fonts() {
+//     return gulp.src(sources.fontawesome_fonts)
+//         .pipe(gulp.dest(destinations.fontawesome_fonts))
+// }
 
 // data file for the calculator
-function data_files() {
-    return gulp.src(sources.data_files)
-        .pipe(gulp.dest(destinations.data_files))
-}
+// function data_files() {
+//     return gulp.src(sources.data_files)
+//         .pipe(gulp.dest(destinations.data_files))
+// }
 
 function vendor_scripts() {
     return gulp.src(sources.vendor_scripts)
@@ -162,7 +162,7 @@ function watch() {
     gulp.watch(sources.theme, theme).on('change', browserSync.reload);
     gulp.watch(sources.scripts, custom_scripts).on('change', browserSync.reload);
     gulp.watch(sources.scripts, vendor_scripts).on('change', browserSync.reload);
-    gulp.watch(sources.data_files, data_files).on('change', browserSync.reload);
+    // gulp.watch(sources.data_files, data_files).on('change', browserSync.reload);
     gulp.watch(sources.styles, styles);
 }
 
@@ -172,11 +172,11 @@ exports.watch = gulp.series(
         theme,
         images,
         fonts,
-        fontawesome_fonts,
-        data_files,
+        // fontawesome_fonts,
+        // data_files,
         custom_scripts,
         vendor_scripts,
         styles
     ),
     watch
-)
+);
