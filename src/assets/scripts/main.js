@@ -61,6 +61,14 @@ jQuery(function ($) {
                         arrows: false,
                     });
 
+                    $(".gallery_slider").slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infiniteScroll: true,
+                        // autoplay: true,
+                        arrows: false,
+                    });
+
                     $(window).scroll(function () {
                         if ($(this).scrollTop() > 1000) {
                             $('#return-to-top').fadeIn();

@@ -10,7 +10,6 @@ const cssnano = require('gulp-cssnano');
 const concat = require('gulp-concat');
 const cache = require('gulp-cached');
 const uglify = require('gulp-uglify-es').default;
-//const webp = require('gulp-webp');
 
 // Bootstrap Javascript
 var BOOTSTRAP = './node_modules/bootstrap/js/dist/';
@@ -31,9 +30,6 @@ var slick = './node_modules/slick-carousel/slick/slick.min.js';
 // Magnific Popup
 var magnific_popup_scripts = ['./node_modules/magnific-popup/dist/jquery.magnific-popup.js'];
 
-// Masonry
-var masonry_scripts = ['./node_modules/masonry-layout/dist/masonry.pkgd.min.js'];
-
 // Definitions
 var src = './src/';
 var build = '../wp-content/themes/aiims/';
@@ -44,13 +40,10 @@ var sources = {
     styles: `${src}assets/styles/**/*`,
     scripts: `${src}assets/scripts/**/*`,
     fonts: `${src}assets/fonts/**/*`,
-    // data_files: `${src}data/**/*`,
-    // fontawesome_fonts: 'node_modules/@fortawesome/fontawesome-free/webfonts/**/*',
     vendor_scripts: [].concat.apply([], [
         bootstrap_scripts,
         lazy_load_script,
         magnific_popup_scripts,
-        masonry_scripts,
         slick,
     ]),
 }
@@ -59,8 +52,6 @@ var destinations = {
     styles: `${build}styles/`,
     scripts: `${build}scripts/`,
     fonts: `${build}fonts/`,
-    // data_files: `${build}data/`
-    // fontawesome_fonts: `${build}/webfonts/`
 }
 
 /**
@@ -106,19 +97,6 @@ function fonts() {
     return gulp.src(sources.fonts)
         .pipe(gulp.dest(destinations.fonts))
 }
-
-// font awesome needs its web fonts in the root directory
-// function fontawesome_fonts() {
-//     return gulp.src(sources.fontawesome_fonts)
-//         .pipe(gulp.dest(destinations.fontawesome_fonts))
-// }
-
-// data file for the calculator
-// function data_files() {
-//     return gulp.src(sources.data_files)
-//         .pipe(gulp.dest(destinations.data_files))
-// }
-
 function vendor_scripts() {
     return gulp.src(sources.vendor_scripts)
         .pipe(sourcemaps.init())
@@ -155,14 +133,12 @@ function watch() {
     browserSync.init({
         proxy: encodeURI(`localhost/projects/${path.resolve(__dirname, '../').split(path.sep).pop()}/`),
         injectChanges: true,
-        // files: [__dirname, '!node_modules/']
     });
 
     gulp.watch(sources.images, images).on('change', browserSync.reload);
     gulp.watch(sources.theme, theme).on('change', browserSync.reload);
     gulp.watch(sources.scripts, custom_scripts).on('change', browserSync.reload);
     gulp.watch(sources.scripts, vendor_scripts).on('change', browserSync.reload);
-    // gulp.watch(sources.data_files, data_files).on('change', browserSync.reload);
     gulp.watch(sources.styles, styles);
 }
 
@@ -172,8 +148,6 @@ exports.watch = gulp.series(
         theme,
         images,
         fonts,
-        // fontawesome_fonts,
-        // data_files,
         custom_scripts,
         vendor_scripts,
         styles
