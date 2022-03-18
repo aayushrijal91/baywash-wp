@@ -4,9 +4,7 @@ jQuery(function ($) {
     var Engine = {
         ui: {
             misc: function () {
-                AOS.init({
-                    duration: 1500,
-                });
+                AOS.init({ duration: 500 });
                 AOS.refresh();
                 $(() => {
                     $(".testimonial_slider").slick({

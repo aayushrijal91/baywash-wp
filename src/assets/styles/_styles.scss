@@ -499,17 +499,22 @@ section.services {
 
 section.services_inner {
     .section__1 {
-        padding: 118px 0 146px;
+        padding: 64px 0;
+
+        @include media-breakpoint-up(md) {
+            padding: 118px 0 146px;
+        }
 
         .services_innerText {
             .services_innerHeroTitle {
                 color: $complete-black;
-                padding: 34.14px 0 46px 0;
                 font-weight: 600;
-                font-size: 2.1225rem; // 33.96px
+                padding: 34px 0;
+                font-size: 1.3rem;
 
-                @include media-breakpoint-down(sm) {
-                    font-size: 1rem;
+                @include media-breakpoint-up(md) {
+                    font-size: 2.1225rem; // 33.96px
+                    padding: 34.14px 0 46px 0;
                 }
             }
 
@@ -539,13 +544,21 @@ section.services_inner {
     .section__2 {
         background: imgUrl("service_innerTestimonialBg.png") center top;
         background-size: contain;
-        padding: 105px 0 33px;
+        padding: 48px 0;
+
+        @include media-breakpoint-up(md) {
+            padding: 105px 0 33px;
+        }
 
         .services_innerTestimonialWrapper {
             background-color: $white;
             border-radius: 16px;
             box-shadow: 0px 9px 32px rgba(89, 92, 219, 0.05);
-            padding: 59px 74px;
+            padding: 36px 24px;
+
+            @include media-breakpoint-up(md) {
+                padding: 59px 74px;
+            }
 
             p {
                 font-size: 0.875rem; // 14px
@@ -617,7 +630,7 @@ section.contact-us {
 
         .admin_email {
             padding-top: 48px;
-            
+
             @include media-breakpoint-up(md) {
                 padding-top: 122px;
             }
