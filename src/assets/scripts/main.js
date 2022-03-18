@@ -18,6 +18,14 @@ jQuery(function ($) {
                         centerPadding: "542px",
                         autoplay: true,
                         dots: true,
+                        responsive: [
+                            {
+                                breakpoint: 540,
+                                settings: {
+                                    centerPadding: "0px"
+                                }
+                            }
+                        ]
                     });
 
                     $(".serviceList_slider").slick({

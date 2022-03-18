@@ -29,7 +29,7 @@ get_template_part('parts/section', 'banner');
 					$title = get_the_title();
 					$link = get_the_permalink();
 			?>
-					<div class="col-md-6 col-lg-3" data-aos="flip-up">
+					<div class="col-6 col-lg-3" data-aos="flip-up">
 						<div class="services_listCard">
 							<a href="<?= $link ?>">
 								<img src="<?= $featured_img_url ?>" class="cover_image">

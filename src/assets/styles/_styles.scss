@@ -465,13 +465,17 @@ section.services {
 
     .service_listWrapper {
         padding: 24px 0;
-        
+
         @include media-breakpoint-up(md) {
             padding: 59px 0 65px 0;
         }
 
         .services_listCard {
-            padding: 35px 0;
+            padding: 16px 0;
+
+            @include media-breakpoint-up(md) {
+                padding: 35px 0;
+            }
 
             .cover_image {
                 width: 100%;
@@ -480,10 +484,14 @@ section.services {
             }
 
             .services_listTitle {
-                font-size: 1.469rem; // 23.5px
                 color: $complete-black;
                 font-weight: 700;
                 padding-top: 25.29px;
+                font-size: 1rem;
+
+                @include media-breakpoint-up(md) {
+                    font-size: 1.469rem; // 23.5px
+                }
             }
         }
     }
@@ -613,7 +621,11 @@ section.testimonials {
     padding: 70px 0;
 
     .testimonial_slider {
-        margin: 71px 0;
+        margin: 36px 0;
+
+        @include media-breakpoint-up(md) {
+            margin: 71px 0;
+        }
 
         .slick-slide {
             margin: 0 28px;
@@ -625,12 +637,18 @@ section.testimonials {
             }
 
             .testimonial_textWrapper {
-                margin: -8rem 64px 0 64px;
                 background: $white;
                 box-shadow: 0px 9px 32px rgba(89, 92, 219, 0.05);
-                border-radius: 16px;
                 position: relative;
-                padding: 32px;
+                margin: -2rem 7px 0;
+                border-radius: 10px;
+                padding: 32px 16px;
+                
+                @include media-breakpoint-up(md) {
+                    margin: -8rem 64px 0 64px;
+                    border-radius: 16px;
+                    padding: 32px;
+                }
 
                 .testimonial_textHeading {
                     padding-bottom: 16px;
