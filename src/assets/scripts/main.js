@@ -42,6 +42,7 @@ jQuery(function ($) {
                             }
                         ]
                     });
+                    AOS.refresh();
 
                     $(".homepage_bannerClientSlider").slick({
                         slidesToShow: 6,
@@ -49,6 +50,14 @@ jQuery(function ($) {
                         infiniteScroll: true,
                         arrows: false,
                         autoplay: true,
+                        responsive: [
+                            {
+                                breakpoint: 540,
+                                settings: {
+                                    slidesToShow: 2,
+                                }
+                            }
+                        ]
                     });
 
                     $(".banner_infoSlider").slick({
@@ -57,6 +66,14 @@ jQuery(function ($) {
                         infiniteScroll: true,
                         autoplay: true,
                         arrows: false,
+                        responsive: [
+                            {
+                                breakpoint: 540,
+                                settings: {
+                                    slidesToShow: 1,
+                                }
+                            }
+                        ]
                     });
 
                     $(".gallery_slider").slick({

@@ -32,69 +32,35 @@ $banner_title = get_field('title') != '' ? get_field('title') : get_the_title();
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-xl-6 d-none d-lg-block homepage_bannerContentRight">
+                    <div class="col-12 col-xl-6 homepage_bannerContentRight">
                         <div class="banner_infoSlider">
                             <div class="banner_infoContent">
                                 <div class="row no-gutters align-items-center">
-                                    <div class="col-auto"><img src="<?= get_template_directory_uri() ?>/images/group_photo.webp" alt=""></div>
+                                    <div class="col-auto pr-3"><img src="<?= get_template_directory_uri() ?>/images/group_photo.webp" alt=""></div>
                                     <div class="col">
-                                        <div>Best Service</div>
-                                        <div>High Customer Retention</div>
+                                        <div class="fw-600 h16">Best Service</div>
+                                        <div class="h24">High Customer Retention</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="banner_infoContent">
                                 <div class="row no-gutters align-items-center">
-                                    <div class="col-auto"><img src="<?= get_template_directory_uri() ?>/images/group_photo.webp" alt=""></div>
+                                    <div class="col-auto pr-3"><img src="<?= get_template_directory_uri() ?>/images/group_photo.webp" alt=""></div>
                                     <div class="col">
-                                        <div>Best Service</div>
-                                        <div>High Customer</div>
+                                        <div class="fw-600 h16">15+ Years</div>
+                                        <div class="h24">of Experience</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="banner_infoContent">
                                 <div class="row no-gutters align-items-center">
-                                    <div class="col-auto"><img src="<?= get_template_directory_uri() ?>/images/group_photo.webp" alt=""></div>
+                                    <div class="col-auto pr-3"><img src="<?= get_template_directory_uri() ?>/images/group_photo.webp" alt=""></div>
                                     <div class="col">
-                                        <div>Best Service</div>
-                                        <div>High Customer Retention</div>
+                                        <div class="fw-600 h16">4K+</div>
+                                        <div class="h24">People Looking for New Homes</div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="banner_infoContent"><img src="images/lib/5k-landscapes-card.png" alt=""></div>
-                            <div class="banner_infoContent"><img src="images/lib/4k-card.png" alt=""></div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="mobile-cta d-lg-none mt-md-5 py-md-4">
-        <div class="container">
-            <div class="row no-gutters justify-content-md-center py-2 info-slider-mobile">
-                <div class="col-12 col-md-6 my-2 px-md-2">
-                    <div class="row no-gutters align-items-center mobile-cta-card">
-                        <div class="col-4 col-md-auto"><img src="images/icons/1kbuilders.png" alt=""></div>
-                        <div class="col pl-3">
-                            <div class="fw-600">Net Profit up $150K</div>
-                            <div class="h18 text-lightblue">in under 12 months</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 my-2 px-md-2">
-                    <div class="row no-gutters align-items-center mobile-cta-card">
-                        <div class="col-auto"><img src="images/icons/56landscapes.png" alt=""></div>
-                        <div class="col pl-3">
-                            <div class="fw-600">More Time, More Money, Less Stress</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 my-2 px-md-2">
-                    <div class="row no-gutters align-items-center mobile-cta-card">
-                        <div class="col-auto"><img src="images/icons/4k.png" alt=""></div>
-                        <div class="col pl-3">
-                            <div class="fw-600">One Client Grew Net</div>
-                            <div class="h18 text-lightblue">Profits $200K in 15 months</div>
                         </div>
                     </div>
                 </div>

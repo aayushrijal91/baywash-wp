@@ -92,7 +92,11 @@ section.homepageBanner {
     }
 
     .homepage_bannerContentLeft {
-        padding: 113px 0 215px 0;
+        padding: 64px 0 24px 0;
+
+        @include media-breakpoint-up(md) {
+            padding: 113px 0 215px 0;
+        }
 
         span.bordered-text {
             color: $white !important;
@@ -124,21 +128,28 @@ section.homepageBanner {
 
     .homepage_bannerContentRight {
         .banner_infoSlider {
-            padding: 53px 0;
+            padding: 36px 0;
 
-            .slick-list {
-                padding: 0 10% 0 0;
-            }
+            @include media-breakpoint-up(md) {
+                padding: 53px 0;
 
-            .slick-slide {
-                margin-right: 20px;
+                .slick-list {
+                    padding: 0 10% 0 0;
+                }
+
+                .slick-slide {
+                    margin-right: 20px;
+                }
             }
 
             .banner_infoContent {
                 background: $white;
-                box-shadow: 0px 14.4921px 63.2381px rgba(51, 51, 51, 0.06);
                 border-radius: 32px;
                 padding: 31.62px;
+
+                @include media-breakpoint-up(md) {
+                    box-shadow: 0px 14.4921px 63.2381px rgba(51, 51, 51, 0.06);
+                }
             }
         }
     }
@@ -157,11 +168,20 @@ section.homepageBanner {
 
 section.homepage {
     .homepage_about {
-        background: linear-gradient($primary 0 85%, $white 85% 100%);
+        background: $primary;
+        
+        @include media-breakpoint-up(md){
+            background: linear-gradient($primary 0 85%, $white 85% 100%);
+        }
+
         margin: 36px 0 51px 0;
 
         .homepage_aboutText {
-            padding: 100px 0;
+            padding: 64px 16px;
+
+            @include media-breakpoint-up(md){
+                padding: 100px 0;
+            }
 
             .homepage_smallHeroTitle {
                 color: $white;
@@ -221,6 +241,17 @@ section.homepage {
 }
 
 section.quoteForm {
+    .quoteForm_heroTitle {
+        font-size: 2rem; //32px
+        font-weight: 700;
+        color: $complete-black;
+        text-align: center;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 1.3rem;
+        }
+    }
+
     .quoteForm_wrapper {
         padding: 61px 0 73px 0;
 
@@ -640,6 +671,17 @@ section.contact-us {
 
 section.testimonials {
     padding: 70px 0;
+
+    .testimonial_heroTitle {
+        font-size: 2rem; //32px
+        font-weight: 700;
+        color: $complete-black;
+        text-align: center;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 1.3rem;
+        }
+    }
 
     .testimonial_slider {
         margin: 36px 0;

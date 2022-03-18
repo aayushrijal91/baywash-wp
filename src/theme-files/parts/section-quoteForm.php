@@ -6,7 +6,7 @@
                     <img src="<?= get_template_directory_uri() ?>/images/testimonial_subHeadingbar.webp" alt="">
                     <div>Contact Us</div>
                 </div>
-                <div class="testimonial_heroTitle text-center h7 fw-700 text-complete-black pt-3">Prompt Service Dates Offered, Get a Free Quote!</div>
+                <div class="quoteForm_heroTitle pt-3">Prompt Service Dates Offered, Get a Free Quote!</div>
                 <div class="quoteForm_wrapper">
                     <?= do_shortcode('[contact-form-7 id="981" title="Quote Form"]') ?>
                 </div>

@@ -4,7 +4,7 @@
             <img src="<?= get_template_directory_uri() ?>/images/testimonial_subHeadingbar.webp" alt="">
             <div>See Our Reviews</div>
         </div>
-        <div class="testimonial_heroTitle text-center h7 fw-700 text-complete-black pt-3">Best Price &amp; Best Service</div>
+        <div class="testimonial_heroTitle pt-3">Best Price &amp; Best Service</div>
     </div>
     <div class="container-fluid px-0">
         <div class="testimonial_slider">
