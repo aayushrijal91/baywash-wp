@@ -18,7 +18,7 @@ $about_description = get_field('about_description');
 
 	<div class="container-fluid px-0">
 		<div class="row no-gutters homepage_about">
-			<div class="col-12 col-lg-6">
+			<div class="col-12 col-lg-7 col-xxl-6">
 				<img src="<?= $about_hero_image['url'] ?>" alt="<?= $about_hero_image['alt'] ?>">
 			</div>
 			<div class="col homepage_aboutText" data-aos="fade-left">
@@ -26,14 +26,14 @@ $about_description = get_field('about_description');
 					<div class="col-12 homepage_smallHeroTitle">
 						<?= $about_subtitle ?>
 					</div>
-					<div class="col-12 col-xl-8 homepage_aboutHeroTitle">
+					<div class="col-12 col-xl-11 col-xxl-8 homepage_aboutHeroTitle">
 						<?= $about_hero_title ?>
 					</div>
-					<div class="col-12 col-xl-10 homepage_aboutSmDescription">
+					<div class="col-12 col-xl-11 col-xxl-10 homepage_aboutSmDescription">
 						<?= $about_description ?>
 					</div>
 					<div class="col-12">
-						<div class="row no-gutters homepage_aboutButtons pt-4 pt-lg-5">
+						<div class="row no-gutters homepage_aboutButtons pt-4 pt-xxl-5">
 							<div class="col-auto pr-md-3 pr-lg-5 pb-3 pb-md-0">
 								<a href="<?= get_site_url() ?>/service" class="btn btn-white rounded-pill text-black fw-600 h25 px-4">
 									See Our Services

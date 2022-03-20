@@ -35,6 +35,12 @@ jQuery(function ($) {
                         autoplay: true,
                         responsive: [
                             {
+                                breakpoint: 1600,
+                                settings: {
+                                    slidesToShow: 4,
+                                }
+                            },
+                            {
                                 breakpoint: 540,
                                 settings: {
                                     slidesToShow: 1,
