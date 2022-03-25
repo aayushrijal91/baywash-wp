@@ -4,12 +4,12 @@
 
 header.header {
     .header-navigation-bar {
-        @include media-breakpoint-down(lg){
+        @include media-breakpoint-down(lg) {
             .mobile-menu {
                 padding: 16px 0;
             }
         }
-        
+
         ul.navbar-nav li.nav-item {
             .nav-link {
                 font-weight: 600;
@@ -17,7 +17,7 @@ header.header {
                 padding: 0 34.2px;
                 font-size: 1rem;
 
-                @include media-breakpoint-down(lg){
+                @include media-breakpoint-down(lg) {
                     padding: 8px 0;
                 }
 
@@ -1205,6 +1205,10 @@ footer.footer {
                 padding: 9px 0;
                 color: $light;
                 font-weight: 300;
+
+                a {
+                    color: $light;
+                }
             }
         }
     }
