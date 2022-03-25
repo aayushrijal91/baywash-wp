@@ -210,8 +210,7 @@ jQuery(function ($) {
                     $(".nav-item.menu-item-has-children").find("> .nav-link").addClass('dropdown-toggle');
 
                     if($(window).width() < 1500) {
-                        $(".nav-item.menu-item-has-children").on('click', function(e){
-                            console.log('here');
+                        $(".nav-item.menu-item-has-children .nav-link.dropdown-toggle").on('click', function(e){
                             e.preventDefault();
                             $('.dropdown > .dropdown-menu').slideToggle();
                         })
