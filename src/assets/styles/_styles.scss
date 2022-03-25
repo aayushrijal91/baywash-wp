@@ -4,12 +4,22 @@
 
 header.header {
     .header-navigation-bar {
+        @include media-breakpoint-down(lg){
+            .mobile-menu {
+                padding: 16px 0;
+            }
+        }
+        
         ul.navbar-nav li.nav-item {
             .nav-link {
                 font-weight: 600;
                 color: $light-black;
                 padding: 0 34.2px;
                 font-size: 1rem;
+
+                @include media-breakpoint-down(lg){
+                    padding: 8px 0;
+                }
 
                 @include media-breakpoint-down(sm) {
                     font-size: 0.875rem;
@@ -679,7 +689,7 @@ section.contact-us {
         @include media-breakpoint-up(xl) {
             padding: 185px 87px 177.5px;
         }
-        
+
         .admin_email {
             padding-top: 48px;
             font-size: 1.8275rem; // 29.24px

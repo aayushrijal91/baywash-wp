@@ -29,10 +29,10 @@ $phone_number = get_field('phone_number', 'options');
             <div class="container">
                 <nav class="navbar navbar-expand-xl navbar-light px-0">
                     <a class="navbar-brand" href="<?= home_url() ?>"><img src="<?= $logo['url']; ?>" alt="<?= $logo['alt']; ?>" /></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#baywashMainNav" aria-controls="baywashMainNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse" id="baywashMainNav">
                         <?php wp_nav_menu(array(
                             'menu' => 'Primary Menu',
                             'menu_class' => 'navbar-nav',
