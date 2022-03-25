@@ -16,7 +16,7 @@ $small_description_1 = get_field('small_description_1');
                 </div>
                 <div class="col services_innerText pt-5 pt-md-0" data-aos="fade-left">
                     <div class="row no-gutters justify-content-center">
-                        <div class="col-11 col-xxl-10 pr-md-5">
+                        <div class="col-11 col-xxl-10 pr-lg-5 pt-md-6 pt-lg-0">
                             <div class="small-hero-title">
                                 <?= the_title() ?> Services
                             </div>
