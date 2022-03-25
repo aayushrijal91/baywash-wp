@@ -496,6 +496,11 @@ section.services {
             padding-top: 24px;
 
             @include media-breakpoint-up(md) {
+                padding: 40px 0;
+                font-size: 1.105rem; // 20px
+            }
+
+            @include media-breakpoint-up(lg) {
                 padding: 40px 100px 0;
                 font-size: 1.25rem; // 20px
             }

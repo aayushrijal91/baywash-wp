@@ -18,10 +18,6 @@ h2,
     font-size: 2.3125rem; // 37px
     margin-bottom: 0;
 
-    @include media-breakpoint-down(lg) {
-        font-size: 3rem;
-    }
-
     @include media-breakpoint-down(sm) {
         font-size: 1.5rem;
     }
