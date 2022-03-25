@@ -36,6 +36,22 @@ header.header {
                 max-width: 70%;
             }
         }
+
+        @include media-breakpoint-up(xl){
+            .dropdown:hover > .dropdown-menu {
+                display: block;
+            }
+        }
+        
+        .dropdown-menu {
+            min-width: 14rem;
+
+            a.nav-link {
+                padding: 0.5rem !important;
+                font-weight: 500 !important;
+                font-size: 0.875rem !important;
+            }
+        }
     }
 }
 
