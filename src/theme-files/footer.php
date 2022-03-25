@@ -28,7 +28,7 @@ $footer_logo = get_field('footer_logo', 'options');
 			</div>
 			<div class="col-xl pt-5 pt-lg-0">
 				<div class="row no-gutters justify-content-between">
-					<div class="col-6 col-lg-2 footer-sidebar-column">
+					<div class="col-4 col-md-2 footer-sidebar-column">
 						<div class="footer-sidebar-title h21">Site</div>
 						<?php wp_nav_menu(array(
 							'menu' => 'Footer Menu',
@@ -39,10 +39,10 @@ $footer_logo = get_field('footer_logo', 'options');
 							// 'container_id' => '',
 						)); ?>
 					</div>
-					<div class="col-6 col-lg footer-sidebar-column">
+					<div class="col footer-sidebar-column">
 						<div class="footer-sidebar-title h21">Services</div>
 						<div class="row no-gutters">
-							<div class="col-5">
+							<div class="col-6 col-lg-5">
 								<ul>
 									<li>NDIS Cleaning</li>
 									<li>Commercial &amp; Office</li>
@@ -60,7 +60,7 @@ $footer_logo = get_field('footer_logo', 'options');
 							</div>
 						</div>
 					</div>
-					<div class="col-6 col-lg-auto footer-sidebar-column">
+					<div class="col-6 col-md col-lg-auto footer-sidebar-column">
 						<div class="footer-sidebar-title h21">Contact</div>
 						<ul>
 							<li><?= get_field('address', 'option') ?></li>
@@ -71,8 +71,8 @@ $footer_logo = get_field('footer_logo', 'options');
 				</div>
 			</div>
 		</div>
-		<div class="row justify-content-between footer-bottom">
-			<div class="col-lg-auto copyright">
+		<div class="row justify-content-between justify-content-md-center justify-content-lg-between footer-bottom">
+			<div class="col-md-auto copyright">
 				<?= get_field('copyright_text', 'option') ?>
 			</div>
 			<div class="col-auto">
@@ -84,7 +84,7 @@ $footer_logo = get_field('footer_logo', 'options');
 					<div class="col-auto">
 						<a href="<?= get_field('terms_and_conditions_url', 'option')['url'] ?>" class="text-white fw-300 h24">Terms and Conditions</a>
 					</div>
-					<div class="col-12 col-lg-auto pl-lg-5 pl-xxl-7 text-center pt-4 pt-md-0">
+					<div class="col-12 col-lg-auto pl-lg-5 pl-xxl-7 text-center pt-4 pt-lg-0">
 						<a href="<?= get_field('company_link', 'option')['url'] ?>" target="_blank"><img src="<?= get_field('company_logo', 'option')['url'] ?>" alt="<?= get_field('company_logo', 'option')['alt'] ?>"></a>
 					</div>
 				</div>

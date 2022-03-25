@@ -23,7 +23,7 @@ $banner_title = get_field('title') != '' ? get_field('title') : get_the_title();
                                     <?php if (have_rows('clients')) :
                                         while (have_rows('clients')) : the_row();
                                     ?>
-                                            <div class="homepage_bannerClientSliderContent"><img src="<?= get_sub_field('image')['url'] ?>" alt="JRFS"></div>
+                                            <div class="homepage_bannerClientSliderContent"><img src="<?= get_sub_field('image')['url'] ?>" alt="<?= get_sub_field('image')['alt'] ?>"></div>
                                     <?php
                                         endwhile;
                                     endif;

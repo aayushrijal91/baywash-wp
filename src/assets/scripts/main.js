@@ -18,6 +18,12 @@ jQuery(function ($) {
                         dots: true,
                         responsive: [
                             {
+                                breakpoint: 900,
+                                settings: {
+                                    centerPadding: "0px"
+                                }
+                            },
+                            {
                                 breakpoint: 540,
                                 settings: {
                                     centerPadding: "0px"
@@ -38,6 +44,12 @@ jQuery(function ($) {
                                 breakpoint: 1600,
                                 settings: {
                                     slidesToShow: 4,
+                                }
+                            },
+                            {
+                                breakpoint: 900,
+                                settings: {
+                                    slidesToShow: 2,
                                 }
                             },
                             {
@@ -74,7 +86,7 @@ jQuery(function ($) {
                         arrows: false,
                         responsive: [
                             {
-                                breakpoint: 540,
+                                breakpoint: 900,
                                 settings: {
                                     slidesToShow: 1,
                                 }

@@ -21,7 +21,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid pl-3 px-md-0">
+    <div class="container-fluid pl-3 px-xxl-0">
         <div class="row justify-content-end">
             <div class="col-12 col-xl-11">
                 <div class="serviceList_slider">
