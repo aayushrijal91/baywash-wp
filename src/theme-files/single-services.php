@@ -16,7 +16,7 @@ $small_description_1 = get_field('small_description_1');
                 </div>
                 <div class="col services_innerText pt-5 pt-md-0" data-aos="fade-left">
                     <div class="row no-gutters justify-content-center">
-                        <div class="col-11 col-xxl-10 pr-lg-5 pt-md-6 pt-lg-0">
+                        <div class="col-11 col-xxl-10 pr-xl-5 pt-md-6 pt-lg-0">
                             <div class="small-hero-title">
                                 <?= the_title() ?> Services
                             </div>
@@ -27,7 +27,7 @@ $small_description_1 = get_field('small_description_1');
                                 <?= $small_description_1 ?>
                             </div>
                             <div class="row no-gutters services_innerButtons pt-4 pt-lg-5">
-                                <div class="col-auto pr-md-3 pr-lg-5 pb-3 pb-md-0">
+                                <div class="col-auto pr-md-3 pr-xl-5 pb-3 pb-md-0">
                                     <a href="<?= get_site_url() ?>/service" class="btn btn-primary rounded-pill text-black fw-600 h25 px-4">
                                         See Our Services
                                     </a>

@@ -97,7 +97,7 @@ $team_memberBio = get_field('team_member_bio');
 		<div class="team">
 			<div class="container">
 				<div class="row align-items-center">
-					<div class="col-lg-5">
+					<div class="col-xl-5">
 						<div class="row no-gutters justify-content-center" data-aos="fade-right">
 							<div class="col-md-9 col-lg-10">
 								<div class="team_memberDpWrapper">
@@ -114,7 +114,7 @@ $team_memberBio = get_field('team_member_bio');
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-7 px-3 px-md-5" data-aos="fade-left">
+					<div class="col-xl-7 px-3 px-md-5" data-aos="fade-left">
 						<div class="team_heading"><?= $team_hero_title_4 ?></div>
 						<div class="team_horizontalDivider"></div>
 						<div class="team_description h21">

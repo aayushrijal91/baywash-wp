@@ -672,15 +672,28 @@ section.contact-us {
         }
 
         @include media-breakpoint-up(lg) {
-            padding: 185px 87px 177.5px;
             margin-top: -6rem;
+            padding: 185px 24px 177.5px;
         }
 
+        @include media-breakpoint-up(xl) {
+            padding: 185px 87px 177.5px;
+        }
+        
         .admin_email {
             padding-top: 48px;
+            font-size: 1.8275rem; // 29.24px
 
             @include media-breakpoint-up(lg) {
                 padding-top: 122px;
+            }
+
+            @include media-breakpoint-only(lg) {
+                font-size: 1rem;
+            }
+
+            @include media-breakpoint-down(sm) {
+                font-size: 1rem;
             }
         }
     }

@@ -24,6 +24,12 @@ jQuery(function ($) {
                                 }
                             },
                             {
+                                breakpoint: 1200,
+                                settings: {
+                                    centerPadding: "150px"
+                                }
+                            },
+                            {
                                 breakpoint: 900,
                                 settings: {
                                     centerPadding: "0px"
@@ -50,6 +56,12 @@ jQuery(function ($) {
                                 breakpoint: 1600,
                                 settings: {
                                     slidesToShow: 4,
+                                }
+                            },
+                            {
+                                breakpoint: 1200,
+                                settings: {
+                                    slidesToShow: 3,
                                 }
                             },
                             {
@@ -93,6 +105,18 @@ jQuery(function ($) {
                         responsive: [
                             {
                                 breakpoint: 1550,
+                                settings: {
+                                    slidesToShow: 1,
+                                }
+                            },
+                            {
+                                breakpoint: 1200,
+                                settings: {
+                                    slidesToShow: 2,
+                                }
+                            },
+                            {
+                                breakpoint: 900,
                                 settings: {
                                     slidesToShow: 1,
                                 }

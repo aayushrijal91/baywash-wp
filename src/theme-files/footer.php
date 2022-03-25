@@ -5,25 +5,31 @@ $footer_logo = get_field('footer_logo', 'options');
 	<div class="container">
 		<div class="row justify-content-between align-items-center">
 			<div class="col-xl-4">
-				<div class="">
-					<a href="<?= home_url() ?>"><img src="<?= $footer_logo['url']; ?>" alt="<?= $footer_logo['alt']; ?>" /></a>
-				</div>
-				<div class="footer-description">
-					<div class="row no-gutters">
-						<div class="col-xxl-8">
-							<?= get_field('description', 'options') ?>
+				<div class="row align-items-lg-center pb-lg-5 pb-xl-0">
+					<div class="col-12 col-lg col-xl-12">
+						<a href="<?= home_url() ?>"><img src="<?= $footer_logo['url']; ?>" alt="<?= $footer_logo['alt']; ?>" /></a>
+					</div>
+					<div class="col-12 col-lg col-xl-12">
+						<div class="footer-description">
+							<div class="row no-gutters">
+								<div class="col-xxl-8">
+									<?= get_field('description', 'options') ?>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="social-media">
-					<?php if (have_rows('social_media', 'option')) : ?>
-						<?php while (have_rows('social_media', 'option')) : the_row();
-							$social_icon = get_sub_field('social_icon');
-							$social_url = get_sub_field('social_media_url');
-						?>
-							<a href="<?= $social_url ?>" class="social-icon" target="_blank"><img src="<?= $social_icon['url'] ?>" alt="<?= $social_icon['alt'] ?>"></a>
-						<?php endwhile; ?>
-					<?php endif; ?>
+					<div class="col-12 col-lg-3 col-xl-12">
+						<div class="social-media">
+							<?php if (have_rows('social_media', 'option')) : ?>
+								<?php while (have_rows('social_media', 'option')) : the_row();
+									$social_icon = get_sub_field('social_icon');
+									$social_url = get_sub_field('social_media_url');
+								?>
+									<a href="<?= $social_url ?>" class="social-icon" target="_blank"><img src="<?= $social_icon['url'] ?>" alt="<?= $social_icon['alt'] ?>"></a>
+								<?php endwhile; ?>
+							<?php endif; ?>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="col-xl pt-5 pt-lg-0">
