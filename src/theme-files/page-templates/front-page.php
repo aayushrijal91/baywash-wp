@@ -11,6 +11,7 @@ $about_hero_image = get_field('about_hero_image');
 $about_subtitle = get_field('about_subtitle');
 $about_hero_title = get_field('about_hero_title');
 $about_description = get_field('about_description');
+$phone_number = get_field('phone_number', 'options');
 ?>
 
 <section class="homepage">

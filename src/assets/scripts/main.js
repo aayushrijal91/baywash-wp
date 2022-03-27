@@ -218,12 +218,18 @@ jQuery(function ($) {
                 });
 
             }, // end misc
-        }, // end ui
-        //utils: {
-
-        //}, // end utils
+        },
     };
     Engine.ui.misc();
     //Engine.utils.sliders();
 });
 
+document.querySelectorAll('a[href="#quote_form"], a[href="#previous-jobs"]').forEach(function (anchor) {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});

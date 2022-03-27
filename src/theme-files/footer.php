@@ -25,7 +25,7 @@ $footer_logo = get_field('footer_logo', 'options');
 									$social_icon = get_sub_field('social_icon');
 									$social_url = get_sub_field('social_media_url');
 								?>
-									<a href="<?= $social_url ?>" class="social-icon" target="_blank"><img src="<?= $social_icon['url'] ?>" alt="<?= $social_icon['alt'] ?>"></a>
+									<a href="<?= $social_url['url'] ?>" class="social-icon" target="_blank"><img src="<?= $social_icon['url'] ?>" alt="<?= $social_icon['alt'] ?>"></a>
 								<?php endwhile; ?>
 							<?php endif; ?>
 						</div>
@@ -59,8 +59,8 @@ $footer_logo = get_field('footer_logo', 'options');
 						<div class="footer-sidebar-title h21">Contact</div>
 						<ul>
 							<li><?= get_field('address', 'option') ?></li>
-							<li><?= get_field('phone_number', 'option') ?></li>
-							<li><?= get_field('admin_email', 'option') ?></li>
+							<li><a href="tel:<?= get_field('phone_number', 'option') ?>"><?= get_field('phone_number', 'option') ?></a></li>
+							<li><a href="mailto:<?= get_field('admin_email', 'option') ?>"><?= get_field('admin_email', 'option') ?></a></li>
 						</ul>
 					</div>
 				</div>

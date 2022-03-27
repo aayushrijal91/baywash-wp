@@ -21,15 +21,17 @@ get_template_part('parts/section', 'banner');
 				<div class="contact_address" data-aos="fade-left">
 					<div class="text-black fw-800 h10">Head Office</div>
 					<div class="text-white fw-400 h11 py-4">
-						<?= get_field('address','option') ?>
+						<?= get_field('address', 'option') ?>
 					</div>
 					<div class="text-white fw-500 h8 pb-4">
-						<?= get_field('phone_number', 'option') ?>
+						<a href="tel:<?= get_field('phone_number', 'option') ?>" class="text-white"><?= get_field('phone_number', 'option') ?></a>
 					</div>
 					<div class="text-white fw-400 h11">
 						Interested in working for us? <a class="btn p-0 fw-800 text-white h11"><u>Click here</u></a>
 					</div>
-					<div class="text-black fw-800 h10 admin_email"><?= get_field('admin_email', 'option') ?></div>
+					<div class="text-black fw-800 h10 admin_email">
+						<a href="mailto:<?= get_field('admin_email', 'option') ?>" class="text-black"><?= get_field('admin_email', 'option') ?></a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -37,6 +39,6 @@ get_template_part('parts/section', 'banner');
 </section>
 
 <?php
-	get_template_part('parts/section', 'testimonials');
-	get_footer();
+get_template_part('parts/section', 'testimonials');
+get_footer();
 ?>
