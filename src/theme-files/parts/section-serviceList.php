@@ -57,10 +57,11 @@
                             $featured_img_url = get_the_post_thumbnail_url($post->ID, 'full');
                             $title = get_the_title();
                             $link = get_the_permalink();
+                            $linkable = get_field('small_description_1');
                             $terms = get_the_terms($post->ID, 'categories');
                             $category = strtolower($terms[0]->name);
                     ?>
-                            <a href="<?= $link ?>" class="serviceList_sliderContent <?= $category ?>">
+                            <a href="<?= $link ?>" class="serviceList_sliderContent <?= $category ?>" style="<?= !$linkable ? 'pointer-events: none': '' ?>">
                                 <img src="<?= $featured_img_url ?>" alt="">
                                 <div class="fw-800 h19 pt-4 text-complete-black"><?= $title ?></div>
                             </a>
