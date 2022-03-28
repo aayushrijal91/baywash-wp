@@ -45,7 +45,7 @@ $banner_title = get_field('title') != '' ? get_field('title') : get_the_title();
                             </div>
                             <div class="banner_infoContent">
                                 <div class="row no-gutters align-items-center">
-                                    <div class="col-auto pr-3"><img src="<?= get_template_directory_uri() ?>/images/group_photo.webp" alt=""></div>
+                                    <div class="col-auto pr-3"><img src="<?= get_template_directory_uri() ?>/images/15yearsphoto.webp" alt=""></div>
                                     <div class="col">
                                         <div class="fw-600 h16">15+ Years</div>
                                         <div class="h24">of Experience</div>
@@ -54,7 +54,7 @@ $banner_title = get_field('title') != '' ? get_field('title') : get_the_title();
                             </div>
                             <div class="banner_infoContent">
                                 <div class="row no-gutters align-items-center">
-                                    <div class="col-auto pr-3"><img src="<?= get_template_directory_uri() ?>/images/group_photo.webp" alt=""></div>
+                                    <div class="col-auto pr-3"><img src="<?= get_template_directory_uri() ?>/images/4kphoto.webp" alt=""></div>
                                     <div class="col">
                                         <div class="fw-600 h16">4K+</div>
                                         <div class="h24">People Looking for New Homes</div>
