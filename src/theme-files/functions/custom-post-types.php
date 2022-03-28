@@ -52,22 +52,21 @@ add_action( 'init', 'init_services_taxonomy', 0 );
  
 //create a custom taxonomy name it "type" for your posts
 function init_services_taxonomy() {
- 
   $labels = array(
-    'name' => _x( 'Types', 'taxonomy general name' ),
+    'name' => _x( 'Categories', 'taxonomy general name' ),
     'singular_name' => _x( 'Type', 'taxonomy singular name' ),
-    'search_items' =>  __( 'Search Types' ),
-    'all_items' => __( 'All Types' ),
+    'search_items' =>  __( 'Search Categories' ),
+    'all_items' => __( 'All Categories' ),
     'parent_item' => __( 'Parent Type' ),
     'parent_item_colon' => __( 'Parent Type:' ),
     'edit_item' => __( 'Edit Type' ), 
     'update_item' => __( 'Update Type' ),
     'add_new_item' => __( 'Add New Type' ),
     'new_item_name' => __( 'New Type Name' ),
-    'menu_name' => __( 'Types' ),
+    'menu_name' => __( 'Categories' ),
   ); 	
  
-  register_taxonomy('types', array('services'), array(
+  register_taxonomy('categories', array('services'), array(
     'hierarchical' => true,
     'labels' => $labels,
     'show_ui' => true,

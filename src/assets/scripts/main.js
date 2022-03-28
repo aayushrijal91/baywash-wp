@@ -78,6 +78,15 @@ jQuery(function ($) {
                             }
                         ]
                     });
+
+                    $('.service_categoryFilter .service_categoryBtn').on('click', function () {
+                        var filterClass = $(this).data('value');
+                        $('.serviceList_slider').slick('slickUnfilter');
+                        $('.serviceList_slider').slick('slickFilter', filterClass);
+                        $('.service_categoryFilter .service_categoryBtn').removeClass('active');
+                        $(this).toggleClass('active');
+                    });
+                    
                     AOS.refresh();
 
                     $(".homepage_bannerClientSlider").slick({

@@ -37,12 +37,12 @@ header.header {
             }
         }
 
-        @include media-breakpoint-up(xl){
+        @include media-breakpoint-up(xl) {
             .dropdown:hover > .dropdown-menu {
                 display: block;
             }
         }
-        
+
         .dropdown-menu {
             min-width: 14rem;
 
@@ -899,8 +899,51 @@ section.serviceList {
         }
     }
 
+    .service_categoryBtn {
+        border: 1px solid #e0e3eb;
+        box-sizing: border-box;
+        border-radius: 32px;
+        color: #888b97;
+        font-weight: 500;
+        font-size: 18px;
+        padding: 14px 24px;
+        display: flex;
+        align-items: center;
+        transition: 0.2s all;
+        cursor: pointer;
+
+        .icon_residential {
+            background: imgUrl('iconResidential.png') center;
+            background-size: contain;
+            width: 18px;
+            height: 19px;
+        }
+
+        .icon_commercial {
+            background: imgUrl('iconCommercial.png') center;
+            background-size: contain;
+            width: 26px;
+            height: 19px;
+        }
+
+        &:hover, &.active {
+            background: $secondary;
+            border: 1px solid $secondary;
+            color: $tertiary;
+
+            .icon_residential {
+                background: imgUrl('iconResidentialHover.png') center;
+            }
+
+            .icon_commercial {
+                background: imgUrl('iconCommercialHover.png') center;
+            }
+        }
+    }
+
     .serviceList_slider {
         padding-top: 48px;
+        min-height: 382px;
 
         @include media-breakpoint-up(md) {
             padding-top: 71px;
