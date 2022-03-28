@@ -7,15 +7,15 @@
                         <div class="small-hero-title">Variety Of Services Available</div>
                         <div class="fw-700 pt-3 serviceList_heroHeading">Our Services</div>
                     </div>
-                    <div class="col-auto pl-lg-5">
+                    <div class="col-md-auto pl-lg-5">
                         <div class="row service_categoryFilter">
-                            <div class="col-6">
+                            <div class="col-md-6 py-1 py-md-0">
                                 <button class="service_categoryBtn" data-value=".residential">
                                     <div class="icon_residential"></div>
                                     <div class="pl-2">Residential</div>
                                 </button>
                             </div>
-                            <div class="col-6">
+                            <div class="col-md-6 py-1 py-md-0">
                                 <button class="service_categoryBtn" data-value=".commercial">
                                     <div class="icon_commercial"></div>
                                     <div class="pl-2">Commercial</div>

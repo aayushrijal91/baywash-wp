@@ -32,9 +32,14 @@ header.header {
         }
 
         @include media-breakpoint-down(sm) {
-            .navbar-brand img {
-                max-width: 70%;
+            .navbar-brand {
+                margin-right: 0;
+
+                img {
+                    max-width: 70%;
+                }
             }
+
         }
 
         @include media-breakpoint-up(xl) {
@@ -899,18 +904,29 @@ section.serviceList {
         }
     }
 
+    .service_categoryFilter {
+        @include media-breakpoint-down(sm) {
+            padding: 16px 0;
+        }
+    }
+
     .service_categoryBtn {
         border: 1px solid #e0e3eb;
         box-sizing: border-box;
         border-radius: 32px;
         color: #888b97;
         font-weight: 500;
-        font-size: 18px;
-        padding: 14px 24px;
-        display: flex;
         align-items: center;
         transition: 0.2s all;
+        display: flex;
         cursor: pointer;
+        font-size: 0.875rem;
+        padding: 8px;
+        
+        @include media-breakpoint-up(md){
+            font-size: 18px;
+            padding: 14px 24px;
+        }
 
         .icon_residential {
             background: imgUrl('iconResidential.png') center;
